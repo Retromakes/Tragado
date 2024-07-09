@@ -2,7 +2,9 @@ Condiciones [IF](https://github.com/mojontwins/MK1/blob/master/docs/scripting.md
 
 >NOTA: Una sola “=” y no dos “==” a diferencia de C#
 
->NOTA2: Los scripts PRESS_FIRE se ejecutarán en más supuestos además de cuando el jugador pulse acción: Si tenemos #define ENABLE_FIRE_ZONE en config.h, hemos definido una zona de acción con [SET_FIRE_ZONE](https://github.com/mojontwins/MK1/blob/master/docs/scripting.md#fire-zone) en nuestro script, y el jugador entra en dicha zona.
+>NOTA 2: Los scripts PRESS_FIRE se ejecutarán en más supuestos además de cuando el jugador pulse acción: Si tenemos #define ENABLE_FIRE_ZONE en config.h, hemos definido una zona de acción con [SET_FIRE_ZONE](https://github.com/mojontwins/MK1/blob/master/docs/scripting.md#fire-zone) en nuestro script, y el jugador entra en dicha zona.
+
+>NOTA 3: Las variables se inicializan a 0
 
 ---
 
