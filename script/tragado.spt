@@ -41,7 +41,7 @@ END
 ENTERING GAME
 	IF TRUE
 	THEN
-		WARP_TO 13, 1, 5
+		WARP_TO 7, 7, 0
 	END
 END
 
@@ -111,10 +111,35 @@ ENTERING SCREEN 17
 	END
 END
 
-# estomago
+# higado
+ENTERING SCREEN 18
+	IF TRUE
+	THEN
+		SET TILE (2, 5) = 26
+	END
+END
+
+# cruce estomago
 ENTERING SCREEN 19
 	IF TRUE
 	THEN
+		SET TILE (4, 4) = 23
 		SET TILE (10, 3) = 33
+	END
+END
+
+# cruce pancreas ronyons intestins
+ENTERING SCREEN 22
+	IF TRUE
+	THEN
+		SET TILE (13, 2) = 28
+	END
+END
+
+# intestino final antes de ano
+ENTERING SCREEN 28
+	IF TRUE
+	THEN
+		SET TILE (8, 8) = 36
 	END
 END
