@@ -128,6 +128,23 @@ void run_script (unsigned char whichs) {
         sc_terminado = sc_continuar = 0;
         while (!sc_terminado) {
             switch (read_byte ()) {
+                case 0x10:
+                    // IF FLAG sc_x = sc_n
+                    // Opcode: 10 sc_x sc_n
+                    // readxy ();
+                    // sc_terminado = (flags [sc_x] != sc_y);
+                    #asm
+                            call _read_two_bytes_D_E
+                            // Set sc_terminado if flags [D] != E
+                            ld  a, d
+                            call undo_flag_reference_do
+                            cp  e
+                            jr  z, _flag_equal_val_ok
+                            ld  a, 1
+                            ld  (_sc_terminado), a
+                        ._flag_equal_val_ok
+                    #endasm
+                    break;
                 case 0xF0:
                      // IF TRUE
                      // Opcode: F0

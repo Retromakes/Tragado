@@ -4,45 +4,74 @@
 DEFALIAS
 	$BOLSITA_POLVOS_MAGICOS = 1
 	# icono 33
+
 	$NARIZ2 = 2
 	# icono 32
+
 	$MOCO = 3
 	# icono 34
+
 	$MONEDA_OXIDADA = 4
 	# icono 20
+
 	$PINZAS = 5
 	# icono 21
+
 	$MONEDA_BRILLANTE = 6
 	# icono 22
+
 	$RANURA = 7
 	# icono 23
+
 	$BEBIDA = 8
 	# icono 24
+
 	$ACIDO_HIGADO = 9
 	# icono 25
+
 	$CONDON = 10
 	# icono 26
+
 	$ACIDO_ESTOMAGO = 11
 	# icono 12
+
 	$CONDON_ROTO = 12
 	# icono 27
+
 	$INHALADOR = 13
 	# icono 28
+
 	$PULMON = 14
 	# icono 29
+
 	$AGUA = 15
 	# icono 30
+
 	$CONDON_AGUA = 16
 	# icono 31
+
 	$DIENTE_CARIES = 17
 	# icono 19
 END 
 
 ENTERING GAME
-	IF TRUE
+#    IF TRUE
+#    THEN
+#        SET $BOLSITA_POLVOS_MAGICOS = 1
+#    END
+
+    IF $BOLSITA_POLVOS_MAGICOS = 0
 	THEN
-		WARP_TO 7, 7, 0
+        # estomago
+		WARP_TO 19, 7, 2
 	END
+
+    IF $BOLSITA_POLVOS_MAGICOS = 1
+	THEN
+        # nariz 2
+		WARP_TO 0, 7, 2
+	END
+
 END
 
 # nariz 2
@@ -125,6 +154,7 @@ ENTERING SCREEN 19
 	THEN
 		SET TILE (4, 4) = 23
 		SET TILE (10, 3) = 33
+# no funciona        TEXT ESCRITO!
 	END
 END
 

@@ -308,9 +308,9 @@ extern unsigned char def_keys [0];
 
 // Text
 
-//#define LINE_OF_TEXT				1		// If defined, scripts can show text @ Y = #
-//#define LINE_OF_TEXT_X			1		// X coordinate.
-//#define LINE_OF_TEXT_ATTR			71		// Attribute
+#define LINE_OF_TEXT				1		// If defined, scripts can show text @ Y = #
+#define LINE_OF_TEXT_X			    0		// X coordinate.
+#define LINE_OF_TEXT_ATTR			71		// Attribute
 //#define LINE_OF_TEXT_NO_AUTOERASE			// Do it yourself
 
 // Graphic FX, uncomment which applies...
