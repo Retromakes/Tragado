@@ -6,5 +6,5 @@ const unsigned char decos_0 [] = { 0x37, 22, 0x47, 23, 0x15, 29, 0x16, 20, 0x17,
     const unsigned char decos_6 [] = { 0xA1, 30, 0XA2, 31, 0XA4, 35, 0xff};
     const unsigned char decos_18 [] = { 0x48, 34, 0xff };
 
-    unsigned char *my_spacer =  "                ";
-    unsigned char *my_message = " PUERTA ABIERTA ";
+    unsigned char *my_spacer  = "                                ";
+    unsigned char *my_message = "12345678901234567890123456789012";
