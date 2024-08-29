@@ -8,3 +8,58 @@ const unsigned char decos_0 [] = { 0x37, 22, 0x47, 23, 0x15, 29, 0x16, 20, 0x17,
 
     unsigned char *my_spacer  = "                                ";
     unsigned char *my_message = "12345678901234567890123456789012";
+
+extern unsigned char *textos_pantallas [0];
+
+#asm
+    .texto0 defm  "    LA NARIZ ESTA TAPONADA      ", 0
+    .texto1 defm  " AHI HAY UNA PASTILLA MENTOLADA ", 0
+    .texto2 defm  "", 0
+
+    .texto3 defm  " UNA BOCA CON UNA CARIES BRUTAL ", 0
+    .texto4 defm  "ESO VERDE ES UN GARGAJO ATASCADO", 0
+    .texto5 defm  "", 0
+
+    .texto6 defm  "", 0
+    .texto7 defm  "ESTE TIO SE HA TRAGADO UNA LATA?", 0
+    .texto8 defm  "", 0
+
+    .texto9 defm  "   PULMON IZQUIERDO SUPERIOR    ", 0
+    .texto10 defm "CHUPA, CHUPA, QUE YO TE AVISO...", 0
+    .texto11 defm "    PULMON DERECHO SUPERIOR     ", 0
+
+    .texto12 defm "        PULMON IZQUIERDO        ", 0
+    .texto13 defm "  ESOS PULMONES ESTAN TAPONADOS ", 0
+    .texto14 defm "         PULMON DERECHO         ", 0
+
+    .texto15 defm "   AGUA EN EL PULMON IZQUIERDO  ", 0
+    .texto16 defm "    EL ESOFAGO TERMINA AQUI     ", 0
+    .texto17 defm "   AGUA EN EL PULMON DERECHO    ", 0
+
+    .texto18 defm "  HIGADO IRRITADO POR EL ORUJO  ", 0
+    .texto19 defm " UNA BOLSITA CON POLVOS MAGICOS ", 0
+    .texto20 defm "   EL ESTOMAGO ESTA TAPONADO    ", 0
+
+    .texto21 defm "    ESTE RIÑON ESTA RESECO      ", 0
+    .texto22 defm " VAYA, EL CONDON XXS SE HA ROTO ", 0
+    .texto23 defm " ESTE RIÑON TAMBIEN ESTA RESECO ", 0
+
+    .texto24 defm "  FINAL DEL INTESTINO DELGADO   ", 0
+    .texto25 defm "EL INTESTINO APESTA! NO ENTRARE ", 0
+    .texto26 defm "  CURVAS DEL INTESTINO DELGADO  ", 0
+
+    .texto27 defm "  ESE APENDICE ESTA MUY PRIETO  ", 0
+    .texto28 defm "      EL INTESTINO GRUESO       ", 0
+    .texto29 defm "   CURVA DEL INTESTINO GRUESO   ", 0
+
+    .texto30 defm "", 0
+    .texto31 defm " EL ANO, OHIO, OJETER, OJALDRE  ", 0
+    .texto32 defm "", 0
+
+    .texto33 defm "", 0
+    .texto34 defm "       EL MOJON SIN TWIN!       ", 0
+
+
+    ._textos_pantallas
+        defw texto0, texto1, texto2, texto3, texto4, texto5, texto6, texto7, texto8, texto9, texto10, texto11, texto12, texto13, texto14, texto15, texto16, texto17, texto18, texto19, texto20, texto21, texto22, texto23, texto24, texto25, texto26, texto27, texto28, texto29, texto30, texto31, texto32, texto33, texto34
+#endasm
