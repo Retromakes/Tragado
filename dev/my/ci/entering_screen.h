@@ -76,7 +76,3 @@ switch (n_pant) {
 }
 
 print_str ();
-
-// Force reenter
-o_pant = 99;
-
