@@ -1,7 +1,11 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\dev",
+    "\\dev\\my",
+    "\\dev\\my\\ci",
+    "\\script"
   ],
-  "SelectedNode": "\\show",
+  "SelectedNode": "\\dev\\my\\ci\\entering_screen.h",
   "PreviewInSolutionExplorer": false
 }
