@@ -2,5 +2,5 @@
 // Copyleft 2010-2014, 2020 by the Mojon Twins
 
 case 23:
-    success = playing = 0;
+    
     break;

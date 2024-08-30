@@ -79,8 +79,8 @@
 
 //#define PLAYER_CHECK_MAP_BOUNDARIES		// If defined, you can't exit the map.
 //#define DIRECT_TO_PLAY					// If defined, title screen is also the game frame.
-//#define DEACTIVATE_KEYS 					// If defined, keys are not present.
-//#define DEACTIVATE_OBJECTS				// If defined, objects are not present.
+#define DEACTIVATE_KEYS 					// If defined, keys are not present.
+#define DEACTIVATE_OBJECTS				// If defined, objects are not present.
 #define DEACTIVATE_REFILLS				// If defined, life refills are not present.
 #define ONLY_ONE_OBJECT					// If defined, only one object can be carried at a time.
 #define OBJECT_COUNT				1		// Defines which FLAG will be used to store the object count.
@@ -297,8 +297,8 @@ extern unsigned char def_keys [0];
 #define OBJECTS_Y					99		// Objects counter character coordinates
 #define OBJECTS_ICON_X				30		// 
 #define OBJECTS_ICON_Y				0		// Objects icon character coordinates (use with ONLY_ONE_OBJECT)
-#define KEYS_X						16		//
-#define KEYS_Y						0		// Keys counter character coordinates
+#define KEYS_X						99		//
+#define KEYS_Y						99		// Keys counter character coordinates
 #define KILLED_X					99		//
 #define KILLED_Y					99		// Kills counter character coordinates
 #define AMMO_X						99		// 
@@ -308,9 +308,9 @@ extern unsigned char def_keys [0];
 
 // Text
 
-#define LINE_OF_TEXT				1		// If defined, scripts can show text @ Y = #
-#define LINE_OF_TEXT_X			    0		// X coordinate.
-#define LINE_OF_TEXT_ATTR			71		// Attribute
+//#define LINE_OF_TEXT				1		// If defined, scripts can show text @ Y = #
+//#define LINE_OF_TEXT_X			    0		// X coordinate.
+//#define LINE_OF_TEXT_ATTR			71		// Attribute
 //#define LINE_OF_TEXT_NO_AUTOERASE			// Do it yourself
 
 // Graphic FX, uncomment which applies...
@@ -380,6 +380,6 @@ extern unsigned char def_keys [0];
 unsigned char behs [] = {
 	0, 8, 8, 8, 8, 8, 8, 8, 8, 4, 4, 1, 1, 0, 0,10,
 	0, 0, 0, 0, 0, 0, 0, 8, 0, 1, 0, 0, 0, 8, 0, 0,
-	8, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+	8, 128, 128, 128, 128, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
 };
 #endif
