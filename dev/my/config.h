@@ -168,7 +168,7 @@
 // Scripting
 // ---------
 
-#define ACTIVATE_SCRIPTING				// Activates msc scripting and flag related stuff.
+//#define ACTIVATE_SCRIPTING				// Activates msc scripting and flag related stuff.
 #define MAX_FLAGS 					32
 //#define SCRIPTING_DOWN					// Use DOWN as the action key.
 //#define SCRIPTING_KEY_AUX1				// Use AUX1 as the action key instead.
