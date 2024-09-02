@@ -27,7 +27,9 @@ switch (n_pant) {
 		break;
     // garganta
 	case 4:
-        Coloca_Obstaculo (15, 6, 8);
+        if (garganta_despejada == 0) {
+            Coloca_Obstaculo (15, 6, 8);
+        }
 		break;
     // laringe
 	case 7:

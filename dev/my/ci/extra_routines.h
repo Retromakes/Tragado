@@ -1,9 +1,9 @@
 // MTE MK1 (la Churrera) v5.0
 // Copyleft 2010-2014, 2020 by the Mojon Twins
 
-if (n_pant == 0)
+if (n_pant == 0) {
     // si no ha despejado aun el obstaculo
-    // y lleva en inventario el objeto de la pantalla 19
+    // y lleva en inventario el objeto 33 (bolsa de polvos)
     if (nariz_despejada == 0 && flags[30] == 33) {
         if (p_tx < 9 && p_ty > 4  && p_ty < 8) {
             // cambio el flag de nariz despejada
@@ -14,12 +14,31 @@ if (n_pant == 0)
             Vacia (6, 6);
             Vacia (6, 5);
             Vacia (5, 5);
+            // actualizo el texto que se mostrara ahora al entrar
+            textos_pantallas[0] = " LA NARIZ AHORA ESTA DESPEJADA ";
             // suelto el objeto
             flags[30] = 0;
             // muestro el objeto en el inventario
             RedibujaInventario();
+            // recargo el texto de la pantalla
+            EscribeTextoPantalla();
+        }
+    }
+} else if (n_pant == 4) {
+    // si no ha despejado aun el obstaculo
+    // y lleva en inventario el objeto 18 (pastilla de menta)
+    if (garganta_despejada == 0 && flags[30] == 18) {
+        if ((p_tx == 6 || p_tx == 7) && p_ty > 6) {
+            // cambio el flag de garganta_despejada
+            garganta_despejada = 1;
+            // borro las tiles del obstaculo
+            Vacia (6, 8);
             // actualizo el texto que se mostrara ahora al entrar
-            textos_pantallas[0] = " LA NARIZ AHORA ESTA DESPEJADA ";
+            textos_pantallas[4] = "   MMMH... UNA GARGANTA LIMPIA  ";
+            // suelto el objeto
+            flags[30] = 0;
+            // muestro el objeto en el inventario
+            RedibujaInventario();
             // recargo el texto de la pantalla
             EscribeTextoPantalla();
         }

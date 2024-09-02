@@ -10,12 +10,13 @@ const unsigned char decos_0 [] = { 0x37, 22, 0x47, 23, 0x15, 29, 0x16, 20, 0x17,
     unsigned char *my_message = "12345678901234567890123456789012";
 
 extern unsigned char nariz_despejada = 0;
+extern unsigned char garganta_despejada = 0;
 
 extern unsigned char *textos_pantallas [0];
 
 #asm
     .texto0 defm  "    LA NARIZ ESTA TAPONADA      ", 0
-    .texto1 defm  " AHI HAY UNA PASTILLA MENTOLADA ", 0
+    .texto1 defm  "NO ERA SINUSITIS,ERA UN CARAMELO", 0
     .texto2 defm  "", 0
 
     .texto3 defm  " UNA BOCA CON UNA CARIES BRUTAL ", 0
