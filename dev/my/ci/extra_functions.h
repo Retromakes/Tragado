@@ -24,3 +24,7 @@ void Recoge_Objeto(unsigned int n_objeto) {
     // aviso al motor que aun esta tocando un tile especial
     flags[31] = 1;
 }
+
+void Coloca_Objeto(unsigned int n_obj, unsigned int x_obj, unsigned int y_obj) {
+    _x = x_obj; _y = y_obj; _t = flags[n_obj]; _n = 128; update_tile ();
+}

@@ -1,12 +1,13 @@
 // MTE MK1 (la Churrera) v5.0
 // Copyleft 2010-2014, 2020 by the Mojon Twins
 
-flags[3] = 33;
-
+// defino los objetos de cada pantalla
+flags[0] = 34;
+flags[3] = 19;
 flags[19] = 33;
 
-// inventario
-flags[30] = 32;
+// inventario inicial
+flags[30] = 0;
 
 // debug teletransporto a pantalla inicial
 n_pant = 19;
