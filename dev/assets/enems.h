@@ -215,7 +215,7 @@ typedef struct {
 
 HOTSPOT hotspots [] = {
 	{0, 0, 0}, 
-	{18, 2, 0}, 
+	{0, 0, 0}, 
 	{0, 0, 0}, 
 	{0, 0, 0}, 
 	{0, 0, 0}, 
@@ -252,9 +252,9 @@ HOTSPOT hotspots [] = {
 	{0, 0, 0}
 };
 
-#define N_HOTSPOTS_TYPE_0 34
+#define N_HOTSPOTS_TYPE_0 35
 #define N_HOTSPOTS_TYPE_1 1
-#define N_HOTSPOTS_TYPE_2 1
+#define N_HOTSPOTS_TYPE_2 0
 #define N_HOTSPOTS_TYPE_3 0
 #define N_HOTSPOTS_TYPE_4 0
 #define N_HOTSPOTS_TYPE_5 0

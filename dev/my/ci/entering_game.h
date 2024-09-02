@@ -3,8 +3,13 @@
 
 // defino los objetos de cada pantalla
 flags[0] = 34;
-flags[3] = 19;
+flags[1] = 18;
+flags[7] = 24;
+flags[13] = 21;
+flags[18] = 26;
 flags[19] = 33;
+flags[22] = 28;
+flags[28] = 36;
 
 // inventario inicial
 flags[30] = 0;
