@@ -30,7 +30,7 @@ if (n_pant == 0) {
     // si no ha despejado aun el obstaculo
     // y lleva en inventario el objeto 34 (moco)
     if (diente_arreglado == 0 && flags[30] == 34) {
-        if if (p_tx > 10 && p_tx < 12  && p_ty < 5) {
+        if (p_tx > 10 && p_tx < 12  && p_ty < 5) {
             // cambio el flag de diente_arreglado
             diente_arreglado = 1;
             // borro las tiles del obstaculo
