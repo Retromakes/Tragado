@@ -79,7 +79,7 @@
 
 //#define PLAYER_CHECK_MAP_BOUNDARIES		// If defined, you can't exit the map.
 //#define DIRECT_TO_PLAY					// If defined, title screen is also the game frame.
-//#define DEACTIVATE_KEYS 					// If defined, keys are not present.
+#define DEACTIVATE_KEYS 					// If defined, keys are not present.
 #define DEACTIVATE_OBJECTS				// If defined, objects are not present.
 #define DEACTIVATE_REFILLS				// If defined, life refills are not present.
 #define ONLY_ONE_OBJECT					// If defined, only one object can be carried at a time.

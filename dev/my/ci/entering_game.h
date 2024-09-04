@@ -12,9 +12,10 @@ flags[22] = 28;
 flags[28] = 36;
 
 // inventario inicial
+flags[30] = 20;
 flags[30] = 0;
 
 // debug teletransporto a pantalla inicial
-n_pant = 0;
+n_pant = 3;
 gpx = 8 << 4; p_x = gpx << FIXBITS;
 gpy = 3 << 4; p_y = gpy << FIXBITS;

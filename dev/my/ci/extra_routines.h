@@ -33,12 +33,12 @@ if (n_pant == 0) {
         if (p_tx > 10 && p_tx < 12  && p_ty < 5) {
             // cambio el flag de diente_arreglado
             diente_arreglado = 1;
-            // borro las tiles del obstaculo
-            Vacia (11, 3);
+            // pongo el diente
+            Coloca_Obstaculo (3, 11, 3);
             // actualizo el texto que se mostrara ahora al entrar
             textos_pantallas[3] = "RATONCITO ME DIO MONEDA OXIDADA";
             // suelto el objeto
-            flags[30] = 0;
+            flags[30] = 20;
             // muestro el objeto en el inventario
             RedibujaInventario();
             // recargo el texto de la pantalla
@@ -57,6 +57,35 @@ if (n_pant == 0) {
             Vacia (6, 8);
             // actualizo el texto que se mostrara ahora al entrar
             textos_pantallas[4] = "   MMMH... UNA GARGANTA LIMPIA  ";
+            // suelto el objeto
+            flags[30] = 0;
+            // muestro el objeto en el inventario
+            RedibujaInventario();
+            // recargo el texto de la pantalla
+            EscribeTextoPantalla();
+        }
+    }
+} else if (n_pant == 19) {
+    // BOCA ESTOMAGO
+    // si lleva en el inventario el objeto 20 (moneda oxidada)
+    if (flags[30] == 20) {
+        if (p_tx == 10 && p_ty == 3) {
+            // actualizo el texto que se mostrara ahora al entrar
+            EscribeTexto(" EL ACIDO HA LIMPIADO LA MONEDA ");
+            // cambio la moneda oxidada por una limpia
+            flags[30] = 22;
+            // muestro el objeto en el inventario
+            RedibujaInventario();
+        }
+    } else if (moneda_introducida == 0 && flags[30] == 22) {
+        if (p_tx == 5 && (p_ty == 3 || p_ty == 4)) {
+            // cambio el flag de moneda_introducida
+            moneda_introducida = 1;
+            // borro las tiles del obstaculo
+            Vacia (4, 3);
+            Vacia (4, 4);
+            // actualizo el texto que se mostrara ahora al entrar
+            textos_pantallas[19] = " BINGO! YA HAY ACCESO AL HIGADO ";
             // suelto el objeto
             flags[30] = 0;
             // muestro el objeto en el inventario

@@ -45,6 +45,13 @@ void EscribeTextoPantalla(void) {
     print_str ();
 }
 
+void EscribeTexto(char *frase) {
+    _x = 0; _y = 23; _t = 79;
+    _gp_gen = frase;
+    print_str ();
+}
+
+// debug esto no se usara
 void EscribeNumero(unsigned int numero) {
     _x = 10; _y = 0; _t = numero;
     print_number2 ();

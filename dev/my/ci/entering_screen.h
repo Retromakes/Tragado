@@ -23,8 +23,10 @@ switch (n_pant) {
 		break;
     // boca
 	case 3:
-        Coloca_Obstaculo (19, 11, 3);
-		break;
+        if (diente_arreglado == 0) {
+            Coloca_Obstaculo (19, 11, 3);
+        }
+	    break;
     // garganta
 	case 4:
         if (garganta_despejada == 0) {
@@ -58,8 +60,12 @@ switch (n_pant) {
 		break;
     // boca estomago
 	case 19:
-        Coloca_Objeto (19, 10, 3);
-		break;
+        if (moneda_introducida == 0) {
+            Coloca_Objeto (19, 9, 3);
+            Coloca_Obstaculo (23, 4, 3);
+            Coloca_Obstaculo (23, 4, 4);
+        }
+	    break;
     // pancreas-riñones-intestinos
 	case 22:
         Coloca_Objeto (22, 13, 2);

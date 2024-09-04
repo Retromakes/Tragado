@@ -12,6 +12,9 @@ const unsigned char decos_0 [] = { 0x37, 22, 0x47, 23, 0x15, 29, 0x16, 20, 0x17,
 extern unsigned char nariz_despejada = 0;
 extern unsigned char garganta_despejada = 0;
 extern unsigned char diente_arreglado = 0;
+extern unsigned char moneda_introducida = 0;
+extern unsigned char pulmones_despejados = 0;
+
 
 extern unsigned char *textos_pantallas [0];
 
