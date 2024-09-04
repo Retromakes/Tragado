@@ -16,7 +16,7 @@ if (n_pant == 0) {
             Vacia (6, 5);
             Vacia (5, 5);
             // actualizo el texto que se mostrara ahora al entrar
-            textos_pantallas[0] = " LA NARIZ AHORA ESTA DESPEJADA ";
+            textos_pantallas[0] = " LA NARIZ AHORA ESTA DESPEJADA  ";
             // suelto el objeto
             flags[30] = 0;
             // muestro el objeto en el inventario
@@ -36,7 +36,7 @@ if (n_pant == 0) {
             // pongo el diente
             Coloca_Obstaculo (3, 11, 3);
             // actualizo el texto que se mostrara ahora al entrar
-            textos_pantallas[3] = "RATONCITO ME DIO MONEDA OXIDADA";
+            textos_pantallas[3] = " RATONCITO ME DIO MONEDA OXIDADA";
             // suelto el objeto
             flags[30] = 20;
             // muestro el objeto en el inventario
