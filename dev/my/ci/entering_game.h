@@ -15,6 +15,6 @@ flags[28] = 36;
 flags[30] = 0;
 
 // debug teletransporto a pantalla inicial
-n_pant = 3;
+n_pant = 0;
 gpx = 8 << 4; p_x = gpx << FIXBITS;
 gpy = 3 << 4; p_y = gpy << FIXBITS;

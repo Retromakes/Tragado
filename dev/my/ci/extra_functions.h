@@ -44,3 +44,8 @@ void EscribeTextoPantalla(void) {
     _gp_gen = textos_pantallas[n_pant];
     print_str ();
 }
+
+void EscribeNumero(unsigned int numero) {
+    _x = 10; _y = 0; _t = numero;
+    print_number2 ();
+}

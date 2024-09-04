@@ -49,6 +49,7 @@ if (n_pant == 0) {
     // GARGANTA
     // si no ha despejado aun el obstaculo
     // y lleva en inventario el objeto 18 (pastilla de menta)
+EscribeNumero(p_ty); // el problema es p_ty, que cuando entra aun es mayor que 6!!!!!!
     if (garganta_despejada == 0 && flags[30] == 18) {
         if ((p_tx == 6 || p_tx == 7) && p_ty > 6) {
             // cambio el flag de garganta_despejada
