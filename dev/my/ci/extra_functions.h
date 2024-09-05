@@ -35,6 +35,10 @@ void Coloca_Obstaculo(unsigned int sprite_obs, unsigned int x_obs, unsigned int 
     _x = x_obs; _y = y_obs; _t = sprite_obs; _n = 8; update_tile ();
 }
 
+void Coloca_Acido_Higado(unsigned int x_obs, unsigned int y_obs) {
+    _x = x_obs; _y = y_obs; _t = 25; _n = 1; update_tile ();
+}
+
 void Vacia(unsigned int x_obs, unsigned int y_obs) {
     _x = x_obs; _y = y_obs; _t = _n = 0; update_tile ();
 }

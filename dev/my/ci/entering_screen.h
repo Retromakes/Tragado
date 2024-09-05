@@ -56,7 +56,20 @@ switch (n_pant) {
         break;
     // higado
 	case 18:
-        Coloca_Objeto (18, 2, 5);
+        Coloca_Objeto (19, 2, 5);
+        if (higado_calmado == 0) {
+            Coloca_Acido_Higado (3, 7);
+            Coloca_Acido_Higado (4, 8);
+            Coloca_Acido_Higado (5, 8);
+            Coloca_Acido_Higado (6, 8);
+            Coloca_Acido_Higado (7, 7);
+            Coloca_Acido_Higado (8, 7);
+            Coloca_Acido_Higado (9, 6);
+            Coloca_Acido_Higado (10, 6);
+            Coloca_Acido_Higado (11, 6);
+            Coloca_Acido_Higado (12, 5);
+            Coloca_Acido_Higado (13, 5);
+        }
 		break;
     // boca estomago
 	case 19:
