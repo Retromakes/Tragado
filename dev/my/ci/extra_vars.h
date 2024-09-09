@@ -16,6 +16,7 @@ extern unsigned char moneda_introducida = 0;
 extern unsigned char pulmones_despejados = 0;
 extern unsigned char higado_calmado = 0;
 extern unsigned char lleva_preservativo = 0;
+extern unsigned char estomago_despejado = 0;
 
 extern unsigned char *textos_pantallas [0];
 
@@ -48,9 +49,9 @@ extern unsigned char *textos_pantallas [0];
     .texto19 defm " UNA BOLSITA CON POLVOS MAGICOS ", 0
     .texto20 defm "   EL ESTOMAGO ESTA TAPONADO    ", 0
 
-    .texto21 defm "    ESTE RIÑON ESTA RESECO      ", 0
-    .texto22 defm " VAYA, EL CONDON XXS SE HA ROTO ", 0
-    .texto23 defm " ESTE RIÑON TAMBIEN ESTA RESECO ", 0
+    .texto21 defm "    ESTE RINON ESTA RESECO      ", 0
+    .texto22 defm " HAY UN INHALADOR EN EL PANCREAS", 0
+    .texto23 defm " ESTE RINON TAMBIEN ESTA RESECO ", 0
 
     .texto24 defm "  FINAL DEL INTESTINO DELGADO   ", 0
     .texto25 defm "EL INTESTINO APESTA! NO ENTRARE ", 0

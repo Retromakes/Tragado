@@ -122,4 +122,26 @@ if (n_pant == 0) {
             EscribeTextoPantalla();
         }
     }
+} else if (n_pant == 20) {
+    // ESTOMAGO
+    // si no ha despejado aun el obstaculo
+    // y lleva en inventario el objeto 26 (preservativo xxs)
+    if (estomago_despejado == 0 && flags[30] == 26) {
+        if (p_tx == 1 && p_ty == 8) {
+            // cambio el flag de estomago_despejado
+            estomago_despejado = 1;
+            // borro las tiles del obstaculo
+            Vacia_Estomago();
+            // actualizo el texto que se mostrara ahora al entrar
+            textos_pantallas[20] = "   EL ESTOMAGO YA ESTA LIMPIO   ";
+            // suelto el objeto y cojo el preservativo roto
+            flags[30] = 27;
+            // cambio el preservativo a roto
+            lleva_preservativo = 0;   
+            // muestro el objeto en el inventario
+            RedibujaInventario();
+            // recargo el texto de la pantalla
+            EscribeTexto(" VAYA, EL CONDON XXS SE HA ROTO ");
+        }
+    }
 }

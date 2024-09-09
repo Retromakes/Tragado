@@ -80,6 +80,9 @@ switch (n_pant) {
         }
         if (lleva_preservativo == 1) {
             Desactiva_Acido();
+        } else  if (estomago_despejado == 1) {
+            // borro las tiles del obstaculo
+            Vacia_Estomago();
         }
 	    break;
     // interior estomago
@@ -87,7 +90,12 @@ switch (n_pant) {
         if (lleva_preservativo == 1) {
             Desactiva_Acido();
         } else {
-            Activa_Acido();
+            if (estomago_despejado == 1) {
+                // borro las tiles del obstaculo
+                Vacia_Estomago();
+            } else {
+                Activa_Acido();
+            }
         }
 	    break;
     // pancreas-riñones-intestinos

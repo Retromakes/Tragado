@@ -50,6 +50,84 @@ void EscribeNumero(unsigned int numero) {
     print_number2 ();
 }
 
+void Vacia_Estomago(void) {
+    if (n_pant == 19) {
+        // la pantalla de entrada al estomago
+        Vacia (11, 4);
+        Vacia (12, 4);
+        Vacia (13, 4);
+        Vacia (14, 4);
+
+        Vacia (12, 5);
+        Vacia (13, 5);
+        Vacia (14, 5);
+    } else if (n_pant == 20) {
+        // la pantalla con el estomago en si
+        Vacia (0, 4);
+        Vacia (1, 4);
+        Vacia (2, 4);
+        Vacia (3, 4);
+        Vacia (4, 4);
+        Vacia (5, 4);
+        Vacia (6, 4);
+        Vacia (7, 4);
+        Vacia (8, 4);
+        Vacia (9, 4);
+        Vacia (10, 4);
+        Vacia (11, 4);
+        Vacia (12, 4);
+
+        Vacia (0, 5);
+        Vacia (1, 5);
+        Vacia (2, 5);
+        Vacia (3, 5);
+        Vacia (4, 5);
+        Vacia (5, 5);
+        Vacia (6, 5);
+        Vacia (7, 5);
+        Vacia (8, 5);
+        Vacia (9, 5);
+        Vacia (10, 5);
+        Vacia (11, 5);
+        Vacia (12, 5);
+        Vacia (13, 5);
+
+        Vacia (4, 6);
+        Vacia (5, 6);
+        Vacia (6, 6);
+        Vacia (7, 6);
+        Vacia (8, 6);
+        Vacia (9, 6);
+        Vacia (10, 6);
+        Vacia (11, 6);
+        Vacia (12, 6);
+        Vacia (13, 6);
+
+        Vacia (2, 7);
+        Vacia (3, 7);
+        Vacia (4, 7);
+        Vacia (5, 7);
+        Vacia (6, 7);
+        Vacia (7, 7);
+        Vacia (8, 7);
+        Vacia (9, 7);
+        Vacia (10, 7);
+        Vacia (11, 7);
+        Vacia (12, 7);
+        
+        Vacia (0, 8);
+        Vacia (1, 8);
+        Vacia (2, 8);
+        Vacia (3, 8);
+        Vacia (4, 8);
+        Vacia (5, 8);
+        Vacia (6, 8);
+        Vacia (7, 8);
+        Vacia (8, 8);
+        Vacia (9, 8);
+    }
+}
+
 void Desactiva_Acido(void) {
     if (n_pant == 19) {
         // la pantalla de entrada al estomago
@@ -124,7 +202,7 @@ void Desactiva_Acido(void) {
         Coloca_Walkable (12, 7, 8);
         Coloca_Walkable (12, 8, 8);
         Coloca_Walkable (12, 9, 8);
-    }    
+    }
 }
 
 void Activa_Acido(void) {
