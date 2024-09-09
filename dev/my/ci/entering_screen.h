@@ -56,7 +56,7 @@ switch (n_pant) {
         break;
     // higado
 	case 18:
-        Coloca_Objeto (19, 2, 5);
+        Coloca_Objeto (18, 2, 5);
         if (higado_calmado == 0) {
             Coloca_Acido_Higado (3, 7);
             Coloca_Acido_Higado (4, 8);
@@ -77,6 +77,17 @@ switch (n_pant) {
             Coloca_Objeto (19, 9, 3);
             Coloca_Obstaculo (23, 4, 3);
             Coloca_Obstaculo (23, 4, 4);
+        }
+        if (lleva_preservativo == 1) {
+            Desactiva_Acido();
+        }
+	    break;
+    // interior estomago
+	case 20:
+        if (lleva_preservativo == 1) {
+            Desactiva_Acido();
+        } else {
+            Activa_Acido();
         }
 	    break;
     // pancreas-riñones-intestinos

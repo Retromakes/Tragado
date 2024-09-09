@@ -15,6 +15,7 @@ extern unsigned char diente_arreglado = 0;
 extern unsigned char moneda_introducida = 0;
 extern unsigned char pulmones_despejados = 0;
 extern unsigned char higado_calmado = 0;
+extern unsigned char lleva_preservativo = 0;
 
 extern unsigned char *textos_pantallas [0];
 
