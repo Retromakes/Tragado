@@ -40,11 +40,13 @@ switch (n_pant) {
     // laringe-pulmones
 	case 13:
         Coloca_Objeto (13, 7, 6);
-        // taponado pulmones
-        Coloca_Obstaculo (29, 2, 4);
-        Coloca_Obstaculo (29, 2, 5);
-        Coloca_Obstaculo (29, 12, 4);
-        Coloca_Obstaculo (29, 12, 5);
+        if (pulmones_despejados == 0) {
+            // taponado pulmones
+            Coloca_Obstaculo (29, 2, 4);
+            Coloca_Obstaculo (29, 2, 5);
+            Coloca_Obstaculo (29, 12, 4);
+            Coloca_Obstaculo (29, 12, 5);
+        }
 		break;
     // pulmon izq
     case 15:
@@ -53,6 +55,14 @@ switch (n_pant) {
         Coloca_Obstaculo (30, 8, 8);
         Coloca_Obstaculo (30, 9, 8);
         Coloca_Obstaculo (30, 10, 8);
+        break;
+    // pulmon der
+    case 17:
+        // liquido pulmones
+        Coloca_Obstaculo (30, 4, 8);
+        Coloca_Obstaculo (30, 5, 8);
+        Coloca_Obstaculo (30, 6, 8);
+        Coloca_Obstaculo (30, 7, 8);
         break;
     // higado
 	case 18:

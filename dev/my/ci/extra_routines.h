@@ -67,6 +67,30 @@ switch (n_pant) {
             }
         }
         break;
+    case 13:
+        // LARINGE PULMONES
+        // si no ha despejado aun el obstaculo y lleva en inventario el objeto 28 (inhalador)
+        if (pulmones_despejados == 0 && flags[30] == 28) {
+            if ((p_tx == 3 && p_ty > 2 && p_ty < 7) || (p_tx == 11 && p_ty > 2 && p_ty < 7)) {
+                // cambio el flag de pulmones_despejados
+                pulmones_despejados = 1;
+                // borro las tiles del obstaculo
+                Vacia (2, 4);
+                Vacia (2, 5);
+
+                Vacia (12, 4);
+                Vacia (12, 5);
+                // actualizo el texto que se mostrara ahora al entrar
+                textos_pantallas[13]  = "  AHHH... PULMONES DESPEJADOS!  ";
+                // suelto el objeto
+                flags[30] = 0;
+                // muestro el objeto en el inventario
+                RedibujaInventario();
+                // recargo el texto de la pantalla
+                EscribeTextoPantalla();
+            }
+        }
+        break;
     case 18:
         // HIGADO
         // si no ha despejado aun el obstaculo y lleva en inventario el objeto 24 (lata)
