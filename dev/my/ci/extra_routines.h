@@ -106,14 +106,13 @@ if (n_pant == 0) {
             RedibujaInventario();
         }
     } else if (moneda_introducida == 0 && flags[30] == 22) {
-        if (p_tx == 5 && (p_ty == 3 || p_ty == 4)) {
+        if (p_tx == 5 && p_ty == 4) {
             // cambio el flag de moneda_introducida
             moneda_introducida = 1;
-            // borro las tiles del obstaculo
-            Vacia (4, 3);
+            // borro la tile del obstaculo
             Vacia (4, 4);
             // actualizo el texto que se mostrara ahora al entrar
-            textos_pantallas[19] = " BINGO! YA HAY ACCESO AL HIGADO ";
+            textos_pantallas[19] = " ENTRE EL HIGADO Y EL ESTOMAGO  ";
             // suelto el objeto
             flags[30] = 0;
             // muestro el objeto en el inventario

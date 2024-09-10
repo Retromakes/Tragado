@@ -73,17 +73,21 @@ switch (n_pant) {
 		break;
     // boca estomago
 	case 19:
+        Coloca_Objeto (19, 9, 3);
         if (moneda_introducida == 0) {
-            Coloca_Objeto (19, 9, 3);
-            Coloca_Obstaculo (23, 4, 3);
             Coloca_Obstaculo (23, 4, 4);
         }
         if (lleva_preservativo == 1) {
             Desactiva_Acido();
-        } else  if (estomago_despejado == 1) {
-            // borro las tiles del obstaculo
-            Vacia_Estomago();
-        }
+        } else {
+            if (estomago_despejado == 0) {
+                // dibujo el acido
+                Activa_Acido();
+            } else {
+                // borro las tiles del obstaculo
+                Vacia_Estomago();
+            }
+        }        
 	    break;
     // interior estomago
 	case 20:

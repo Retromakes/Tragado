@@ -30,7 +30,7 @@ extern unsigned char *textos_pantallas [0];
     .texto5 defm  "", 0
 
     .texto6 defm  "", 0
-    .texto7 defm  "ESTE TIO SE HA TRAGADO UNA LATA?", 0
+    .texto7 defm  " ESTE SE HABIA TRAGADO UNA LATA?", 0
     .texto8 defm  "", 0
 
     .texto9 defm  "   PULMON IZQUIERDO SUPERIOR    ", 0
@@ -46,7 +46,7 @@ extern unsigned char *textos_pantallas [0];
     .texto17 defm "   AGUA EN EL PULMON DERECHO    ", 0
 
     .texto18 defm "  HIGADO IRRITADO POR EL ORUJO  ", 0
-    .texto19 defm " UNA BOLSITA CON POLVOS MAGICOS ", 0
+    .texto19 defm " ENTRE EL HIGADO Y EL ESTOMAGO  ", 0
     .texto20 defm "   EL ESTOMAGO ESTA TAPONADO    ", 0
 
     .texto21 defm "    ESTE RINON ESTA RESECO      ", 0

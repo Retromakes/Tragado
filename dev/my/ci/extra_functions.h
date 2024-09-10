@@ -1,12 +1,6 @@
 // MTE MK1 (la Churrera) v5.0
 // Copyleft 2010-2014, 2020 by the Mojon Twins
 
-void RedibujaInventario(void) {
-    _x = 29; _y = 0; _t = flags[30];
-    draw_coloured_tile ();
-    invalidate_tile ();
-}
-
 void Coloca_Objeto(unsigned int n_obj, unsigned int x_obj, unsigned int y_obj) {
     _x = x_obj; _y = y_obj; _t = flags[n_obj]; _n = 128; update_tile ();
 }
@@ -48,6 +42,15 @@ void EscribeTexto(char *frase) {
 void EscribeNumero(unsigned int numero) {
     _x = 10; _y = 0; _t = numero;
     print_number2 ();
+}
+
+void RedibujaInventario(void) {
+    _x = 29; _y = 0; _t = flags[30];
+    draw_coloured_tile ();
+    invalidate_tile ();
+    if (flags[30] == 0) {
+        Vacia(29, 0);
+    }
 }
 
 void Vacia_Estomago(void) {
@@ -218,6 +221,67 @@ void Activa_Acido(void) {
         Coloca_Acido_Estomago (12, 14, 5);
     } else if (n_pant == 20) {
         // la pantalla con el estomago en si
+        Coloca_Acido_Estomago (11, 0, 4);
+        Coloca_Acido_Estomago (11, 1, 4);
+        Coloca_Acido_Estomago (11, 2, 4);
+        Coloca_Acido_Estomago (11, 3, 4);
+        Coloca_Acido_Estomago (11, 4, 4);
+        Coloca_Acido_Estomago (11, 5, 4);
+        Coloca_Acido_Estomago (11, 6, 4);
+        Coloca_Acido_Estomago (11, 7, 4);
+        Coloca_Acido_Estomago (11, 8, 4);
+        Coloca_Acido_Estomago (11, 9, 4);
+        Coloca_Acido_Estomago (11, 10, 4);
+        Coloca_Acido_Estomago (11, 11, 4);
+        Coloca_Acido_Estomago (11, 12, 4);
+
+        Coloca_Acido_Estomago (12, 0, 5);
+        Coloca_Acido_Estomago (12, 1, 5);
+        Coloca_Acido_Estomago (12, 2, 5);
+        Coloca_Acido_Estomago (12, 3, 5);
+        Coloca_Acido_Estomago (12, 4, 5);
+        Coloca_Acido_Estomago (12, 5, 5);
+        Coloca_Acido_Estomago (12, 6, 5);
+        Coloca_Acido_Estomago (12, 7, 5);
+        Coloca_Acido_Estomago (12, 8, 5);
+        Coloca_Acido_Estomago (12, 9, 5);
+        Coloca_Acido_Estomago (12, 10, 5);
+        Coloca_Acido_Estomago (12, 11, 5);
+        Coloca_Acido_Estomago (12, 12, 5);
+        Coloca_Acido_Estomago (12, 13, 5);
+
+        Coloca_Acido_Estomago (12, 4, 6);
+        Coloca_Acido_Estomago (12, 5, 6);
+        Coloca_Acido_Estomago (12, 6, 6);
+        Coloca_Acido_Estomago (12, 7, 6);
+        Coloca_Acido_Estomago (12, 8, 6);
+        Coloca_Acido_Estomago (12, 9, 6);
+        Coloca_Acido_Estomago (12, 10, 6);
+        Coloca_Acido_Estomago (12, 11, 6);
+        Coloca_Acido_Estomago (12, 12, 6);
+        Coloca_Acido_Estomago (12, 13, 6);
+
+        Coloca_Acido_Estomago (12, 2, 7);
+        Coloca_Acido_Estomago (12, 3, 7);
+        Coloca_Acido_Estomago (12, 4, 7);
+        Coloca_Acido_Estomago (12, 5, 7);
+        Coloca_Acido_Estomago (12, 6, 7);
+        Coloca_Acido_Estomago (12, 7, 7);
+        Coloca_Acido_Estomago (12, 8, 7);
+        Coloca_Acido_Estomago (12, 9, 7);
+        Coloca_Acido_Estomago (12, 10, 7);
+        Coloca_Acido_Estomago (12, 11, 7);
+        Coloca_Acido_Estomago (12, 12, 7);
+
+        Coloca_Acido_Estomago (12, 1, 8);
+        Coloca_Acido_Estomago (12, 2, 8);
+        Coloca_Acido_Estomago (12, 3, 8);
+        Coloca_Acido_Estomago (12, 4, 8);
+        Coloca_Acido_Estomago (12, 5, 8);
+        Coloca_Acido_Estomago (12, 6, 8);
+        Coloca_Acido_Estomago (12, 7, 8);
+        Coloca_Acido_Estomago (12, 8, 8);
+        Coloca_Acido_Estomago (12, 9, 8);
     }    
 }
 
@@ -244,7 +308,8 @@ void Recoge_Objeto(unsigned int n_objeto) {
     lleva_preservativo = 0;
 
     // si cogemos un objeto en la pantalla del estomago se activa o desactiva el acido (por si es el condon)
-    if (n_pant == 19){
+    // siempre que no hayamos vaciado ya el estomago
+    if (n_pant == 19 && estomago_despejado == 0){
         if (flags[30] == 26) {
             Desactiva_Acido();
         } else {
@@ -271,7 +336,7 @@ void Recoge_Objeto(unsigned int n_objeto) {
             break;
         case 26:
             lleva_preservativo = 1;
-            EscribeTexto("    TENGO: PRESERVATIVO XXS     ");           
+            EscribeTexto("QUEPO DENTRO DE ESTE CONDON XXS!");
             break;
         case 27:
             EscribeTexto(" TENGO: PRESERVATIVO XXS ROTO   ");
