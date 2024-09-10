@@ -180,9 +180,9 @@
 // Timer
 // -----
 
-//#define TIMER_ENABLE						// Enable timer
+#define TIMER_ENABLE						// Enable timer
 //#define TIMER_INITIAL 			99		// For unscripted games, initial value.
-//#define TIMER_REFILL				30		// Timer refill, using tile 21 (hotspot #5)
+#define TIMER_REFILL				30		// Timer refill, using tile 21 (hotspot #5)
 //#define TIMER_LAPSE				32		// # of frames between decrements
 //#define TIMER_START						// If defined, start timer from the beginning
 //#define TIMER_SCRIPT_0					// If defined, timer = 0 runs "ON_TIMER_OFF" in the script

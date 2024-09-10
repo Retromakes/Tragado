@@ -1,6 +1,11 @@
 // MTE MK1 (la Churrera) v5.0
 // Copyleft 2010-2014, 2020 by the Mojon Twins
 
+if (timer_zero) {
+    EscribeTexto("SE HA ACABADO EL TIEMPO         ");
+    timer_on = 0;     // Detener el temporizador
+}
+
 switch (n_pant) {
     // nariz
     case 0:
@@ -102,6 +107,11 @@ switch (n_pant) {
             flags[30] = 31;
             // muestro el objeto en el inventario
             RedibujaInventario();
+            // activo el timer
+            // Duración en "segundos" del temporizador
+            timer_t = 5;
+            // Activar el temporizador
+            timer_on = 1;
         }
         break;
     case 18:
