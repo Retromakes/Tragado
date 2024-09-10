@@ -1,9 +1,19 @@
 // MTE MK1 (la Churrera) v5.0
 // Copyleft 2010-2014, 2020 by the Mojon Twins
 
-if (timer_zero) {
-    EscribeTexto("SE HA ACABADO EL TIEMPO         ");
-    timer_on = 0;     // Detener el temporizador
+// si lleva el condon con agua
+if (flags[30] == 31) {
+    // comprueba el timer
+    if (timer_on == 1 && timer_t < 1) {
+        // cambio el objeto del inventario por el condon roto
+        flags[30] = 27;
+        // muestro el objeto en el inventario
+        RedibujaInventario();
+        // muestro texto avisando
+        EscribeTexto("    EL CONDON SE HA VACIADO     ");
+        timer_on = 0;     // Detener el temporizador y ponerlo a tope again
+        timer_t = tiempo_condon_goteando;
+    }
 }
 
 switch (n_pant) {
@@ -109,7 +119,7 @@ switch (n_pant) {
             RedibujaInventario();
             // activo el timer
             // Duración en "segundos" del temporizador
-            timer_t = 5;
+            timer_t = tiempo_condon_goteando;
             // Activar el temporizador
             timer_on = 1;
         }

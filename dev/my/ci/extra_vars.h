@@ -18,6 +18,8 @@ extern unsigned char higado_calmado = 0;
 extern unsigned char lleva_preservativo = 0;
 extern unsigned char estomago_despejado = 0;
 
+extern unsigned char tiempo_condon_goteando = 5;
+
 extern unsigned char *textos_pantallas [0];
 
 #asm

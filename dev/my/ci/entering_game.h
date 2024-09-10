@@ -12,7 +12,7 @@ flags[22] = 28;
 flags[28] = 36;
 
 // velocidad del timer
-timer_frames = 25;    // Asume que el juego corre a 25 cuadros por segundo
+timer_frames = 50;    // Asume que el juego corre a 25 cuadros por segundo
 
 // inventario inicial
 flags[30] = 27;
