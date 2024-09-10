@@ -91,6 +91,19 @@ switch (n_pant) {
             }
         }
         break;
+    case 15:
+    case 17:
+        // PULMONES
+        // si lleva en inventario el objeto 27 (condon roto) y se pone sobre el agua
+        if (flags[30] == 27 && p_ty == 7) {
+            // muestro texto avisando
+            EscribeTexto("HE LLENADO EL CONDON, PERO GOTEA");
+            // cambio el objeto del inventario por el condon con agua
+            flags[30] = 31;
+            // muestro el objeto en el inventario
+            RedibujaInventario();
+        }
+        break;
     case 18:
         // HIGADO
         // si no ha despejado aun el obstaculo y lleva en inventario el objeto 24 (lata)
