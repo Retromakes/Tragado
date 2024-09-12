@@ -227,12 +227,30 @@ switch (n_pant) {
             Coloca_Obstaculo (25, 11, 8);
         }
 		break;
-    // intestino final antes de ano
+    // intestino
 	case 25:
-        Coloca_Obstaculo (47, 7, 1);
+        if( intestino_despejado == 0) {
+            Coloca_Obstaculo (47, 7, 1);
+        }
+		break;
+    // apendice
+	case 27:
+        if( apendice_dilatado == 0) {
+            Coloca_Obstaculo (37, 1, 5);
+            Coloca_Obstaculo (37, 2, 5);
+            Coloca_Obstaculo (37, 3, 5);
+            Coloca_Obstaculo (37, 4, 5);
+        }
 		break;
     // intestino final antes de ano
 	case 28:
         Coloca_Objeto (28, 8, 8);
 		break;
+    // ojete
+	case 31:
+        if( apendice_dilatado == 0) {
+            Coloca_Obstaculo (7, 7, 2);
+        }
+		break;
+
 }

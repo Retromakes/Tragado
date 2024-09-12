@@ -19,6 +19,8 @@ extern unsigned char lleva_preservativo = 0;
 extern unsigned char estomago_despejado = 0;
 extern unsigned char rinon1_despejado = 0;
 extern unsigned char rinon2_despejado = 0;
+extern unsigned char intestino_despejado = 0;
+extern unsigned char apendice_dilatado = 0;
 
 extern unsigned char tiempo_condon_goteando = 20;
 
@@ -66,7 +68,7 @@ extern unsigned char *textos_pantallas [0];
     .texto29 defm "   CURVA DEL INTESTINO GRUESO   ", 0
 
     .texto30 defm "", 0
-    .texto31 defm " EL ANO, OHIO, OJETER, OJALDRE  ", 0
+    .texto31 defm " EL OHIO/OJALDRE/OGT ESTA CERRAO", 0
     .texto32 defm "", 0
 
     .texto33 defm "", 0

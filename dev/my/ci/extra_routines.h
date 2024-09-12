@@ -344,4 +344,42 @@ switch (n_pant) {
             }
         }
         break;
+    case 25:
+        // INTESTINO
+        // si no ha despejado aun el obstaculo y lleva en inventario el objeto 21 (mascara FFP2)
+        if (intestino_despejado == 0 && flags[30] == 21) {
+            if (p_tx == 6) {
+                // cambio el flag de intestino_despejado
+                intestino_despejado = 1;
+                // borro las tiles del obstaculo
+                Vacia (7, 1);
+                // actualizo el texto que se mostrara ahora al entrar
+                textos_pantallas[25] = " PUESTA MASCARILLA FFP2 NO HUELE";
+                // suelto el objeto
+                flags[30] = 0;
+                // muestro el objeto en el inventario
+                RedibujaInventario();
+                // recargo el texto de la pantalla
+                EscribeTextoPantalla();
+            }
+        }
+        break;
+    case 27:
+        // APENDICE
+        // si no ha despejado aun el obstaculo y lleva en inventario el objeto 36 (forceps)
+        if (apendice_dilatado == 0 && flags[30] == 36) {
+            if (p_tx == 5 && p_ty == 5) {
+                // aviso que el apendice esta dilatado
+                apendice_dilatado = 1;
+                // muestro texto avisando
+                textos_pantallas[27] = " ESO LE TIENE QUE ESTAR DOLIENDO";
+                // recargo el texto de la pantalla
+                EscribeTextoPantalla();
+                Coloca_Obstaculo (35, 1, 5);
+                Coloca_Obstaculo (35, 2, 5);
+                Coloca_Obstaculo (35, 3, 5);
+                Coloca_Obstaculo (35, 4, 5);
+            }
+        }
+        break;
 }
