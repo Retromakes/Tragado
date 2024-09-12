@@ -373,12 +373,16 @@ switch (n_pant) {
                 apendice_dilatado = 1;
                 // muestro texto avisando
                 textos_pantallas[27] = " ESO LE TIENE QUE ESTAR DOLIENDO";
+                // suelto el objeto
+                flags[30] = 0;
+                // muestro el objeto en el inventario
+                RedibujaInventario();
                 // recargo el texto de la pantalla
                 EscribeTextoPantalla();
-                Coloca_Obstaculo (35, 1, 5);
-                Coloca_Obstaculo (35, 2, 5);
-                Coloca_Obstaculo (35, 3, 5);
-                Coloca_Obstaculo (35, 4, 5);
+                Vacia (1, 5);
+                Vacia (2, 5);
+                Vacia (3, 5);
+                Coloca_Obstaculo (36, 4, 5);
             }
         }
         break;

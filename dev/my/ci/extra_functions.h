@@ -49,7 +49,9 @@ void RedibujaInventario(void) {
     draw_coloured_tile ();
     invalidate_tile ();
     if (flags[30] == 0) {
-        Vacia(29, 0);
+         _x = 29; _y = 0; _t = 47;
+        draw_coloured_tile ();
+        invalidate_tile ();
     }
 }
 
