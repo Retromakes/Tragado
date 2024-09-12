@@ -10,7 +10,7 @@ const unsigned char my_inks [] = {
 	0x06, // FF008080
 	0x00, // FF808080
 	0x18, // FF800080
-	0x1A, // FF80FF00
+	0x0B, // FFFFFFFF
 	0x16, // FF008000
 	0x1C, // FF800000
 	0x0C, // FFFF0000
@@ -18,6 +18,6 @@ const unsigned char my_inks [] = {
 	0x0D, // FFFF00FF
 	0x0F, // FFFF80FF
 	0x03, // FFFFFF80
-	0x0B  // FFFFFFFF
+	0x12  // FF00FF00
 };
 
