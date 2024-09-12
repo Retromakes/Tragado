@@ -203,4 +203,145 @@ switch (n_pant) {
             }
         }
         break;
+    case 21:
+        // RIÑON IZQ
+        // si no ha despejado aun el obstaculo y lleva en inventario el objeto 31 (condon con agua)
+        if (rinon1_despejado == 0 && flags[30] == 31) {
+            if (p_tx == 7 && p_ty == 5) {
+                // cambio el flag de rinon1_despejado
+                rinon1_despejado = 1;
+                // borro las tiles del obstaculo
+                Vacia (3, 1);
+                Vacia (4, 1);
+                Vacia (5, 1);
+                Vacia (6, 1);
+                
+                Vacia (2, 2);
+                Vacia (3, 2);
+                Vacia (4, 2);
+                Vacia (5, 2);
+                Vacia (6, 2);
+                
+                Vacia (1, 3);
+                Vacia (2, 3);
+                Vacia (3, 3);
+                Vacia (4, 3);
+                Vacia (5, 3);
+                
+                Vacia (1, 4);
+                Vacia (2, 4);
+                Vacia (3, 4);
+                Vacia (4, 4);
+                Vacia (5, 4);
+                
+                Vacia (1, 5);
+                Vacia (2, 5);
+                Vacia (3, 5);
+                Vacia (4, 5);
+                Vacia (5, 5);
+                Vacia (6, 5);
+                
+                Vacia (2, 6);
+                Vacia (3, 6);
+                Vacia (4, 6);
+                Vacia (5, 6);
+                Vacia (6, 6);
+
+                Vacia (2, 7);
+                Vacia (3, 7);
+                Vacia (4, 7);
+                Vacia (5, 7);
+                Vacia (6, 7);
+
+                Vacia (3, 8);
+                Vacia (4, 8);
+                Vacia (5, 8);
+                Vacia (6, 8);
+                // actualizo el texto que se mostrara ahora al entrar
+                textos_pantallas[21] = "    HE HUMEDECIDO ESTE RINON    ";
+                // vacio el condon
+                flags[30] = 27;
+                // muestro el objeto en el inventario
+                RedibujaInventario();
+                // recargo el texto de la pantalla
+                EscribeTextoPantalla();
+                // si el otro riñon esta despejado tambien
+                if (rinon2_despejado == 1) {
+                    // actualizo el texto que se mostrara ahora al entrar en el intestino
+                    textos_pantallas[22] = "TANTO AGUA HA EVACUADO FINO FINO";
+                }
+
+            }
+        }
+        break;
+    case 23:
+        // RIÑON DER
+        // si no ha despejado aun el obstaculo y lleva en inventario el objeto 31 (condon con agua)
+        if (rinon2_despejado == 0 && flags[30] == 31) {
+            if (p_tx == 7 && p_ty == 5) {
+                // cambio el flag de rinon2_despejado
+                rinon2_despejado = 1;
+                // borro las tiles del obstaculo
+                Vacia ( 8, 1);
+                Vacia ( 9, 1);
+                Vacia (10, 1);
+                Vacia (11, 1);
+            
+                Vacia ( 8, 2);
+                Vacia ( 9, 2);
+                Vacia (10, 2);
+                Vacia (11, 2);
+                Vacia (12, 2);
+            
+                Vacia ( 9, 3);
+                Vacia (10, 3);
+                Vacia (11, 3);
+                Vacia (12, 3);
+                Vacia (13, 3);
+            
+                Vacia ( 9, 4);
+                Vacia (10, 4);
+                Vacia (11, 4);
+                Vacia (12, 4);
+                Vacia (13, 4);
+            
+                Vacia ( 8, 5);
+                Vacia ( 9, 5);
+                Vacia (10, 5);
+                Vacia (11, 5);
+                Vacia (12, 5);
+                Vacia (13, 5);
+            
+                Vacia ( 8, 6);
+                Vacia ( 9, 6);
+                Vacia (10, 6);
+                Vacia (11, 6);
+                Vacia (12, 6);
+            
+                Vacia ( 8, 7);
+                Vacia ( 9, 7);
+                Vacia (10, 7);
+                Vacia (11, 7);
+                Vacia (12, 7);
+            
+                Vacia ( 8, 8);
+                Vacia ( 9, 8);
+                Vacia (10, 8);
+                Vacia (11, 8);
+                // actualizo el texto que se mostrara ahora al entrar
+                textos_pantallas[23] = "    HE HUMEDECIDO ESTE RINON    ";
+                // vacio el condon
+                flags[30] = 27;
+                // muestro el objeto en el inventario
+                RedibujaInventario();
+                // recargo el texto de la pantalla
+                EscribeTextoPantalla();
+                // si el otro riñon esta despejado tambien
+                if (rinon1_despejado == 1) {
+                    // actualizo el texto que se mostrara ahora al entrar en el intestino
+                    textos_pantallas[22] = "TANTO AGUA HA EVACUADO FINO FINO";
+                }
+            }
+        }
+        break;
 }

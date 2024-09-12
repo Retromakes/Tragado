@@ -112,9 +112,124 @@ switch (n_pant) {
             }
         }
 	    break;
+    // riñon izq
+	case 21:
+        if (rinon1_despejado == 0) {
+            Coloca_Obstaculo (25, 3, 1);
+            Coloca_Obstaculo (25, 4, 1);
+            Coloca_Obstaculo (25, 5, 1);
+            Coloca_Obstaculo (25, 6, 1);
+
+            Coloca_Obstaculo (25, 2, 2);
+            Coloca_Obstaculo (25, 3, 2);
+            Coloca_Obstaculo (25, 4, 2);
+            Coloca_Obstaculo (25, 5, 2);
+            Coloca_Obstaculo (25, 6, 2);
+
+            Coloca_Obstaculo (25, 1, 3);
+            Coloca_Obstaculo (25, 2, 3);
+            Coloca_Obstaculo (25, 3, 3);
+            Coloca_Obstaculo (25, 4, 3);
+            Coloca_Obstaculo (25, 5, 3);
+
+            Coloca_Obstaculo (25, 1, 4);
+            Coloca_Obstaculo (25, 2, 4);
+            Coloca_Obstaculo (25, 3, 4);
+            Coloca_Obstaculo (25, 4, 4);
+            Coloca_Obstaculo (25, 5, 4);
+
+            Coloca_Obstaculo (25, 1, 5);
+            Coloca_Obstaculo (25, 2, 5);
+            Coloca_Obstaculo (25, 3, 5);
+            Coloca_Obstaculo (25, 4, 5);
+            Coloca_Obstaculo (25, 5, 5);
+            Coloca_Obstaculo (25, 6, 5);
+
+            Coloca_Obstaculo (25, 2, 6);
+            Coloca_Obstaculo (25, 3, 6);
+            Coloca_Obstaculo (25, 4, 6);
+            Coloca_Obstaculo (25, 5, 6);
+            Coloca_Obstaculo (25, 6, 6);
+
+            Coloca_Obstaculo (25, 2, 7);
+            Coloca_Obstaculo (25, 3, 7);
+            Coloca_Obstaculo (25, 4, 7);
+            Coloca_Obstaculo (25, 5, 7);
+            Coloca_Obstaculo (25, 6, 7);
+
+            Coloca_Obstaculo (25, 3, 8);
+            Coloca_Obstaculo (25, 4, 8);
+            Coloca_Obstaculo (25, 5, 8);
+            Coloca_Obstaculo (25, 6, 8);
+        }
+		break;
     // pancreas-riñones-intestinos
 	case 22:
         Coloca_Objeto (22, 13, 2);
+        if (rinon1_despejado == 0 || rinon2_despejado == 0) {
+            // pongo caca seca
+            Coloca_Obstaculo (6, 3, 7);
+            Coloca_Obstaculo (6, 4, 7);
+            Coloca_Obstaculo (6, 3, 8);
+            Coloca_Obstaculo (6, 4, 8);
+            Coloca_Obstaculo (6, 3, 9);
+            Coloca_Obstaculo (6, 4, 9);
+        }
+		break;
+    // riñon der
+	case 23:
+        if (rinon2_despejado == 0) {
+            Coloca_Obstaculo (25,  8, 1);
+            Coloca_Obstaculo (25,  9, 1);
+            Coloca_Obstaculo (25, 10, 1);
+            Coloca_Obstaculo (25, 11, 1);
+
+            Coloca_Obstaculo (25,  8, 2);
+            Coloca_Obstaculo (25,  9, 2);
+            Coloca_Obstaculo (25, 10, 2);
+            Coloca_Obstaculo (25, 11, 2);
+            Coloca_Obstaculo (25, 12, 2);
+
+            Coloca_Obstaculo (25,  9, 3);
+            Coloca_Obstaculo (25, 10, 3);
+            Coloca_Obstaculo (25, 11, 3);
+            Coloca_Obstaculo (25, 12, 3);
+            Coloca_Obstaculo (25, 13, 3);
+            
+            Coloca_Obstaculo (25,  9, 4);
+            Coloca_Obstaculo (25, 10, 4);
+            Coloca_Obstaculo (25, 11, 4);
+            Coloca_Obstaculo (25, 12, 4);
+            Coloca_Obstaculo (25, 13, 4);
+
+            Coloca_Obstaculo (25,  8, 5);
+            Coloca_Obstaculo (25,  9, 5);
+            Coloca_Obstaculo (25, 10, 5);
+            Coloca_Obstaculo (25, 11, 5);
+            Coloca_Obstaculo (25, 12, 5);
+            Coloca_Obstaculo (25, 13, 5);
+
+            Coloca_Obstaculo (25,  8, 6);
+            Coloca_Obstaculo (25,  9, 6);
+            Coloca_Obstaculo (25, 10, 6);
+            Coloca_Obstaculo (25, 11, 6);
+            Coloca_Obstaculo (25, 12, 6);
+
+            Coloca_Obstaculo (25,  8, 7);
+            Coloca_Obstaculo (25,  9, 7);
+            Coloca_Obstaculo (25, 10, 7);
+            Coloca_Obstaculo (25, 11, 7);
+            Coloca_Obstaculo (25, 12, 7);
+
+            Coloca_Obstaculo (25,  8, 8);
+            Coloca_Obstaculo (25,  9, 8);
+            Coloca_Obstaculo (25, 10, 8);
+            Coloca_Obstaculo (25, 11, 8);
+        }
+		break;
+    // intestino final antes de ano
+	case 25:
+        Coloca_Obstaculo (47, 7, 1);
 		break;
     // intestino final antes de ano
 	case 28:

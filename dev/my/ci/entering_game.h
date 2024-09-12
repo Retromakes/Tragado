@@ -15,9 +15,11 @@ flags[28] = 36;
 timer_frames = 50;    // Asume que el juego corre a 25 cuadros por segundo
 
 // inventario inicial
-flags[30] = 0;
+flags[30] = 31;
+// debug riñon derecho ya limpio
+rinon2_despejado = 1;
 
 // debug teletransporto a pantalla inicial
-n_pant = 13;
-gpx = 3 << 4; p_x = gpx << FIXBITS;
+n_pant = 22;
+gpx = 2 << 4; p_x = gpx << FIXBITS;
 gpy = 5 << 4; p_y = gpy << FIXBITS;
