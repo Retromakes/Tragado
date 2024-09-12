@@ -128,28 +128,30 @@ switch (n_pant) {
         // HIGADO
         // si no ha despejado aun el obstaculo y lleva en inventario el objeto 24 (lata)
         if (higado_calmado == 0 && flags[30] == 24) {
-            // cambio el flag de higado_calmado
-            higado_calmado = 1;
-            // borro las tiles del acido que irritaba
-            Vacia (3, 7);
-            Vacia (4, 8);
-            Vacia (5, 8);
-            Vacia (6, 8);
-            Vacia (7, 7);
-            Vacia (8, 7);
-            Vacia (9, 6);
-            Vacia (10, 6);
-            Vacia (11, 6);
-            Vacia (12, 5);
-            Vacia (13, 5);
-            // actualizo el texto que se mostrara ahora al entrar
-            textos_pantallas[18] = "EL REFRESCO HA CALMADO EL HIGADO";
-            // suelto el objeto
-            flags[30] = 0;
-            // muestro el objeto en el inventario
-            RedibujaInventario();
-            // recargo el texto de la pantalla
-            EscribeTextoPantalla();
+            if (p_tx == 14) {
+                // cambio el flag de higado_calmado
+                higado_calmado = 1;
+                // borro las tiles del acido que irritaba
+                Vacia (3, 7);
+                Vacia (4, 8);
+                Vacia (5, 8);
+                Vacia (6, 8);
+                Vacia (7, 7);
+                Vacia (8, 7);
+                Vacia (9, 6);
+                Vacia (10, 6);
+                Vacia (11, 6);
+                Vacia (12, 5);
+                Vacia (13, 5);
+                // actualizo el texto que se mostrara ahora al entrar
+                textos_pantallas[18] = "EL REFRESCO HA CALMADO EL HIGADO";
+                // suelto el objeto
+                flags[30] = 0;
+                // muestro el objeto en el inventario
+                RedibujaInventario();
+                // recargo el texto de la pantalla
+                EscribeTextoPantalla();
+            }
         }
         break;
     case 19:
