@@ -212,6 +212,19 @@ switch (n_pant) {
             if (p_tx == 7 && p_ty == 5) {
                 // cambio el flag de rinon1_despejado
                 rinon1_despejado = 1;
+                // actualizo el texto que se mostrara ahora al entrar
+                textos_pantallas[21] = "    HE HUMEDECIDO ESTE RINON    ";
+                // vacio el condon
+                flags[30] = 27;
+                // muestro el objeto en el inventario
+                RedibujaInventario();
+                // recargo el texto de la pantalla
+                EscribeTextoPantalla();
+                // si el otro riñon esta despejado tambien
+                if (rinon2_despejado == 1) {
+                    // actualizo el texto que se mostrara ahora al entrar en el intestino
+                    textos_pantallas[22] = "TANTO AGUA HA EVACUADO FINO FINO";
+                }
                 // borro las tiles del obstaculo
                 Vacia (3, 1);
                 Vacia (4, 1);
@@ -258,21 +271,7 @@ switch (n_pant) {
                 Vacia (3, 8);
                 Vacia (4, 8);
                 Vacia (5, 8);
-                Vacia (6, 8);
-                // actualizo el texto que se mostrara ahora al entrar
-                textos_pantallas[21] = "    HE HUMEDECIDO ESTE RINON    ";
-                // vacio el condon
-                flags[30] = 27;
-                // muestro el objeto en el inventario
-                RedibujaInventario();
-                // recargo el texto de la pantalla
-                EscribeTextoPantalla();
-                // si el otro riñon esta despejado tambien
-                if (rinon2_despejado == 1) {
-                    // actualizo el texto que se mostrara ahora al entrar en el intestino
-                    textos_pantallas[22] = "TANTO AGUA HA EVACUADO FINO FINO";
-                }
-
+                Vacia (6, 8);                
             }
         }
         break;
@@ -283,6 +282,19 @@ switch (n_pant) {
             if (p_tx == 7 && p_ty == 5) {
                 // cambio el flag de rinon2_despejado
                 rinon2_despejado = 1;
+                // actualizo el texto que se mostrara ahora al entrar
+                textos_pantallas[23] = "    HE HUMEDECIDO ESTE RINON    ";
+                // vacio el condon
+                flags[30] = 27;
+                // muestro el objeto en el inventario
+                RedibujaInventario();
+                // recargo el texto de la pantalla
+                EscribeTextoPantalla();
+                // si el otro riñon esta despejado tambien
+                if (rinon1_despejado == 1) {
+                    // actualizo el texto que se mostrara ahora al entrar en el intestino
+                    textos_pantallas[22] = "TANTO AGUA HA EVACUADO FINO FINO";
+                }
                 // borro las tiles del obstaculo
                 Vacia ( 8, 1);
                 Vacia ( 9, 1);
@@ -330,19 +342,6 @@ switch (n_pant) {
                 Vacia ( 9, 8);
                 Vacia (10, 8);
                 Vacia (11, 8);
-                // actualizo el texto que se mostrara ahora al entrar
-                textos_pantallas[23] = "    HE HUMEDECIDO ESTE RINON    ";
-                // vacio el condon
-                flags[30] = 27;
-                // muestro el objeto en el inventario
-                RedibujaInventario();
-                // recargo el texto de la pantalla
-                EscribeTextoPantalla();
-                // si el otro riñon esta despejado tambien
-                if (rinon1_despejado == 1) {
-                    // actualizo el texto que se mostrara ahora al entrar en el intestino
-                    textos_pantallas[22] = "TANTO AGUA HA EVACUADO FINO FINO";
-                }
             }
         }
         break;
