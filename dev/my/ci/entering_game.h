@@ -19,9 +19,23 @@ flags[30] = 0;
 
 // debug teletransporto a pantalla inicial
 /*
-rinon1_despejado = 1;
-rinon2_despejado = 1;
-n_pant = 22;
+n_pant = 28;
 gpx = 3 << 4; p_x = gpx << FIXBITS;
 gpy = 4 << 4; p_y = gpy << FIXBITS;
+
+// variables a cero
+nariz_despejada = 0;
+garganta_despejada = 0;
+diente_arreglado = 0;
+moneda_introducida = 0;
+pulmones_despejados = 0;
+higado_calmado = 0;
+lleva_preservativo = 0;
+estomago_despejado = 0;
+rinon1_despejado = 0;
+rinon2_despejado = 0;
+intestino_despejado = 0;
+apendice_dilatado = 0;
+
+tiempo_condon_goteando = 20;
 */

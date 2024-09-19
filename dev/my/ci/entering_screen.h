@@ -249,7 +249,7 @@ switch (n_pant) {
     // ojete
 	case 31:
         if( apendice_dilatado == 0) {
-            Coloca_Obstaculo (7, 7, 2);
+            Coloca_Obstaculo (7, 7, 4);
         }
 		break;
 

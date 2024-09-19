@@ -341,7 +341,7 @@ void Recoge_Objeto(unsigned int n_objeto) {
             EscribeTexto("QUEPO DENTRO DE ESTE CONDON XXS!");
             break;
         case 27:
-            EscribeTexto(" TENGO: PRESERVATIVO XXS ROTO   ");
+            EscribeTexto(" TENGO: CONDON XXS AGUJEREADO   ");
             break;
         case 28:
             EscribeTexto("        TENGO: INHALADOR        ");

@@ -44,7 +44,7 @@
 #define SCR_INICIO					3		// Initial screen
 #define PLAYER_INI_X				6		//
 #define PLAYER_INI_Y				3		// Initial tile coordinates
-//#define SCR_FIN 					99		// Last screen. 99 = deactivated.
+#define SCR_FIN 					34		// Last screen. 99 = deactivated.
 //#define PLAYER_FIN_X				99		//
 //#define PLAYER_FIN_Y				99		// Player tile coordinates to finish game
 //#define PLAYER_NUM_OBJETOS			25		// Objects to get to finish game
@@ -380,6 +380,6 @@ extern unsigned char def_keys [0];
 unsigned char behs [] = {
 	0, 8, 8, 8, 8, 8, 8, 8, 8, 4, 4, 1, 1, 0, 0,10,
 	0, 0, 0, 0, 0, 0, 0, 8, 0, 1, 0, 0, 0, 8, 0, 0,
-	8, 0, 0, 0, 0, 0, 0, 0, 8, 8, 8, 8, 8, 8, 0, 0,
+	8, 0, 0, 0, 0, 0, 0, 8, 8, 8, 8, 8, 8, 8, 0, 0,
 };
 #endif

@@ -374,6 +374,7 @@ switch (n_pant) {
                 apendice_dilatado = 1;
                 // muestro texto avisando
                 textos_pantallas[27] = " ESO LE TIENE QUE ESTAR DOLIENDO";
+                textos_pantallas[31] = " SE LE HA DILATADO EL O.G.T. !! ";
                 // suelto el objeto
                 flags[30] = 0;
                 // muestro el objeto en el inventario
