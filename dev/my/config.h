@@ -9,7 +9,7 @@
 
 //#define USE_ZX0							// Einar Sauka's ZX0 rather than ol' aplib
 
-#define SOUND_NONE
+//#define SOUND_NONE
 #define SOUND_WYZ
 #define WYZ_FX_CHANNEL 				1		// Where to play sound effects
 
