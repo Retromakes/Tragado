@@ -38,12 +38,6 @@ void EscribeTexto(char *frase) {
     print_str ();
 }
 
-// debug esto no se usara
-void EscribeNumero(unsigned int numero) {
-    _x = 10; _y = 0; _t = numero;
-    print_number2 ();
-}
-
 void RedibujaInventario(void) {
     _x = 29; _y = 0; _t = flags[30];
     draw_coloured_tile ();
