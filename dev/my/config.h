@@ -378,7 +378,7 @@ extern unsigned char def_keys [0];
 // Save for 10 (special), but that's obvious, innit?
 #ifndef COMPRESSED_LEVELS
 unsigned char behs [] = {
-	0, 8, 8, 8, 8, 8, 8, 8, 8, 4, 4, 1, 1, 0, 0,10,
+	0, 8, 8, 8, 8, 8, 8, 8, 8, 4, 4, 1, 1, 0, 0, 8,
 	0, 0, 0, 0, 0, 0, 0, 8, 0, 1, 0, 0, 0, 8, 0, 0,
 	8, 0, 0, 0, 0, 0, 0, 8, 8, 8, 8, 8, 8, 8, 0, 0,
 };
