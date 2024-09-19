@@ -18,11 +18,11 @@ timer_frames = 50;    // Asume que el juego corre a 25 cuadros por segundo
 flags[30] = 0;
 
 // debug teletransporto a pantalla inicial
-
-n_pant = 21;
+/*
+n_pant = 28;
 gpx = 3 << 4; p_x = gpx << FIXBITS;
 gpy = 4 << 4; p_y = gpy << FIXBITS;
-
+*/
 // variables a cero
 nariz_despejada = 0;
 garganta_despejada = 0;

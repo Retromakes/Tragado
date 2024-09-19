@@ -102,12 +102,14 @@ switch (n_pant) {
     // interior estomago
 	case 20:
         if (lleva_preservativo == 1) {
+            Coloca_Obstaculo (15, 0, 8);
             Desactiva_Acido();
         } else {
             if (estomago_despejado == 1) {
                 // borro las tiles del obstaculo
                 Vacia_Estomago();
             } else {
+                Coloca_Obstaculo (15, 0, 8);
                 Activa_Acido();
             }
         }
