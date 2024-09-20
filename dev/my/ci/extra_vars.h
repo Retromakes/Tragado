@@ -32,7 +32,7 @@ extern unsigned char *textos_pantallas [0];
     .texto2 defm  "", 0
 
     .texto3 defm  " UNA BOCA CON UNA CARIES BRUTAL ", 0
-    .texto4 defm  "ESO VERDE ES UN GARGAJO ATASCADO", 0
+    .texto4 defm  "AHI ABAJO HAY UNA FLEMA ATASCADA", 0
     .texto5 defm  "", 0
 
     .texto6 defm  "", 0

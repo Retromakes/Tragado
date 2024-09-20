@@ -90,7 +90,7 @@
 #define PLAYER_BOUNCES						// If defined, collisions make player bounce
 //#define FULL_BOUNCE 						// If defined, evil tile bounces equal MAX_VX, otherwise v/2
 //#define SLOW_DRAIN						// Works with bounces. Drain is 4 times slower
-//#define PLAYER_FLICKERS 					// If defined, collisions make player flicker instead.
+#define PLAYER_FLICKERS 					// If defined, collisions make player flicker instead.
 //#define MAP_BOTTOM_KILLS					// If defined, exiting the map bottomwise kills.
 #define WALLS_STOP_ENEMIES					// If defined, enemies react to the scenary
 //#define EVERYTHING_IS_A_WALL				// If defined, any tile <> type 0 is a wall, otherwise just 8.
