@@ -15,6 +15,9 @@ switch (n_pant) {
             Coloca_Obstaculo (32, 6, 6);
             Coloca_Obstaculo (32, 6, 5);
             Coloca_Obstaculo (32, 5, 5);
+        } else {
+            // redibujo inventario por si hemos reentrado para borrar obstaculos
+            RedibujaInventario();
         }
         break;
     // sinusitis
@@ -46,6 +49,9 @@ switch (n_pant) {
             Coloca_Obstaculo (29, 2, 5);
             Coloca_Obstaculo (29, 12, 4);
             Coloca_Obstaculo (29, 12, 5);
+        } else {
+            // redibujo inventario por si hemos reentrado para borrar obstaculos
+            RedibujaInventario();
         }
 		break;
     // pulmon izq
@@ -79,6 +85,9 @@ switch (n_pant) {
             Coloca_Acido_Higado (11, 6);
             Coloca_Acido_Higado (12, 5);
             Coloca_Acido_Higado (13, 5);
+        } else {
+            // redibujo inventario por si hemos reentrado para borrar obstaculos
+            RedibujaInventario();
         }
 		break;
     // boca estomago
@@ -106,8 +115,18 @@ switch (n_pant) {
             Desactiva_Acido();
         } else {
             if (estomago_despejado == 1) {
+                // si aun lleva el condon roto es que acabo de recargar pantalla para vaciarlo
+                if (flags[30] == 27)
+                {
+                    // muestro el objeto en el inventario
+                    RedibujaInventario();
+                    // recargo el texto de la pantalla
+                    EscribeTexto("EL ACIDO HA AGUJEREADO EL CONDON");
+                }
+                /*
                 // borro las tiles del obstaculo
                 Vacia_Estomago();
+                */
             } else {
                 Coloca_Obstaculo (15, 0, 8);
                 Activa_Acido();
@@ -163,6 +182,10 @@ switch (n_pant) {
             Coloca_Obstaculo (25, 4, 8);
             Coloca_Obstaculo (25, 5, 8);
             Coloca_Obstaculo (25, 6, 8);
+        } else if (flags[30] == 27) {
+            // si lleva el condon roto puede ser porque ha humedecido el riñon asi que
+            // muestro el objeto en el inventario
+            RedibujaInventario();
         }
 		break;
     // pancreas-riñones-intestinos
@@ -227,6 +250,10 @@ switch (n_pant) {
             Coloca_Obstaculo (25,  9, 8);
             Coloca_Obstaculo (25, 10, 8);
             Coloca_Obstaculo (25, 11, 8);
+        } else if (flags[30] == 27) {
+            // si lleva el condon roto puede ser porque ha humedecido el riñon asi que
+            // muestro el objeto en el inventario
+            RedibujaInventario();
         }
 		break;
     // intestino

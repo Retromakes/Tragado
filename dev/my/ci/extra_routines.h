@@ -25,12 +25,17 @@ switch (n_pant) {
             if (p_tx < 9 && p_ty > 4  && p_ty < 8) {
                 // cambio el flag de nariz despejada
                 nariz_despejada = 1;
+                // recargo la pantalla para mostrarla sin obstaculo
+                o_pant = 99;
+
+                /*
                 // borro las tiles del obstaculo
                 Vacia (7, 7);
                 Vacia (7, 6);
                 Vacia (6, 6);
                 Vacia (6, 5);
                 Vacia (5, 5);
+                */
                 // actualizo el texto que se mostrara ahora al entrar
                 textos_pantallas[0] = " LA NARIZ AHORA ESTA DESPEJADA  ";
                 // suelto el objeto
@@ -89,12 +94,16 @@ switch (n_pant) {
             if ((p_tx == 3 && p_ty > 2 && p_ty < 7) || (p_tx == 11 && p_ty > 2 && p_ty < 7)) {
                 // cambio el flag de pulmones_despejados
                 pulmones_despejados = 1;
+                // recargo la pantalla para mostrarla sin obstaculo
+                o_pant = 99;
+                /*
                 // borro las tiles del obstaculo
                 Vacia (2, 4);
                 Vacia (2, 5);
 
                 Vacia (12, 4);
                 Vacia (12, 5);
+                */
                 // actualizo el texto que se mostrara ahora al entrar
                 textos_pantallas[13]  = "  AHHH... PULMONES DESPEJADOS!  ";
                 // suelto el objeto
@@ -131,6 +140,9 @@ switch (n_pant) {
             if (p_tx == 14) {
                 // cambio el flag de higado_calmado
                 higado_calmado = 1;
+                // recargo la pantalla para mostrarla sin obstaculo
+                o_pant = 99;
+                /*
                 // borro las tiles del acido que irritaba
                 Vacia (3, 7);
                 Vacia (4, 8);
@@ -143,6 +155,7 @@ switch (n_pant) {
                 Vacia (11, 6);
                 Vacia (12, 5);
                 Vacia (13, 5);
+                */
                 // actualizo el texto que se mostrara ahora al entrar
                 textos_pantallas[18] = "EL REFRESCO HA CALMADO EL HIGADO";
                 // suelto el objeto
@@ -190,18 +203,14 @@ switch (n_pant) {
             if (p_tx == 1 && p_ty == 8) {
                 // cambio el flag de estomago_despejado
                 estomago_despejado = 1;
-                // borro las tiles del obstaculo
-                Vacia_Estomago();
                 // actualizo el texto que se mostrara ahora al entrar
                 textos_pantallas[20] = "   EL ESTOMAGO YA ESTA LIMPIO   ";
-                // suelto el objeto y cojo el preservativo roto
-                flags[30] = 27;
                 // cambio el preservativo a roto
                 lleva_preservativo = 0;   
-                // muestro el objeto en el inventario
-                RedibujaInventario();
-                // recargo el texto de la pantalla
-                EscribeTexto(" VAYA, EL CONDON XXS SE HA ROTO ");
+                // suelto el objeto y cojo el preservativo roto
+                flags[30] = 27;
+                // redibujo pantalla (en este caso se comprueba el inventario refrescado)
+                Vacia_Estomago();
             }
         }
         break;
@@ -216,16 +225,20 @@ switch (n_pant) {
                 textos_pantallas[21] = "    HE HUMEDECIDO ESTE RINON    ";
                 // vacio el condon
                 flags[30] = 27;
+                /*
                 // muestro el objeto en el inventario
                 RedibujaInventario();
                 // recargo el texto de la pantalla
                 EscribeTextoPantalla();
+                */
                 // si el otro riñon esta despejado tambien
                 if (rinon2_despejado == 1) {
                     // actualizo el texto que se mostrara ahora al entrar en el intestino
                     textos_pantallas[22] = "TANTO AGUA HA EVACUADO FINO FINO";
                 }
-                // borro las tiles del obstaculo
+                // recargo la pantalla para mostrar el riñon sin obstaculo
+                o_pant = 99;
+                /*
                 Vacia (3, 1);
                 Vacia (4, 1);
                 Vacia (5, 1);
@@ -271,7 +284,8 @@ switch (n_pant) {
                 Vacia (3, 8);
                 Vacia (4, 8);
                 Vacia (5, 8);
-                Vacia (6, 8);                
+                Vacia (6, 8);
+                */
             }
         }
         break;
@@ -286,17 +300,21 @@ switch (n_pant) {
                 textos_pantallas[23] = "    HE HUMEDECIDO ESTE RINON    ";
                 // vacio el condon
                 flags[30] = 27;
+                /*
                 // muestro el objeto en el inventario
                 RedibujaInventario();
                 // recargo el texto de la pantalla
                 EscribeTextoPantalla();
+                */
                 // si el otro riñon esta despejado tambien
                 if (rinon1_despejado == 1) {
                     // actualizo el texto que se mostrara ahora al entrar en el intestino
                     textos_pantallas[22] = "TANTO AGUA HA EVACUADO FINO FINO";
                 }
-                // borro las tiles del obstaculo
-                Vacia ( 8, 1);
+                // recargo la pantalla para mostrar el riñon sin obstaculo
+                o_pant = 99;
+
+/*                Vacia ( 8, 1);
                 Vacia ( 9, 1);
                 Vacia (10, 1);
                 Vacia (11, 1);
@@ -341,7 +359,7 @@ switch (n_pant) {
                 Vacia ( 8, 8);
                 Vacia ( 9, 8);
                 Vacia (10, 8);
-                Vacia (11, 8);
+                Vacia (11, 8);*/
             }
         }
         break;

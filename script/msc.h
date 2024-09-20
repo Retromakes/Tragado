@@ -128,27 +128,6 @@ void run_script (unsigned char whichs) {
         sc_terminado = sc_continuar = 0;
         while (!sc_terminado) {
             switch (read_byte ()) {
-                case 0x10:
-                    // IF FLAG sc_x = sc_n
-                    // Opcode: 10 sc_x sc_n
-                    // readxy ();
-                    // sc_terminado = (flags [sc_x] != sc_y);
-                    #asm
-                            call _read_two_bytes_D_E
-                            // Set sc_terminado if flags [D] != E
-                            ld  a, d
-                            call undo_flag_reference_do
-                            cp  e
-                            jr  z, _flag_equal_val_ok
-                            ld  a, 1
-                            ld  (_sc_terminado), a
-                        ._flag_equal_val_ok
-                    #endasm
-                    break;
-                case 0xF0:
-                     // IF TRUE
-                     // Opcode: F0
-                     break;
                 case 0xFF:
                     // THEN
                     // Opcode: FF
@@ -161,20 +140,6 @@ void run_script (unsigned char whichs) {
             sc_terminado = 0;
             while (!sc_terminado) {
                 switch (read_byte ()) {
-                    case 0x20:
-                        // SET TILE (sc_x, sc_y) = sc_n
-                        // Opcode: 20 sc_x sc_y sc_n
-                        readxy ();
-                        sc_n = read_vbyte ();
-                        _x = sc_x; _y = sc_y; _n = behs [sc_n]; _t = sc_n; update_tile ();
-                        break;
-                    case 0x6D:
-                        // WARP_TO sc_n
-                        // Opcode: 6D sc_n
-                        n_pant = read_vbyte ();
-                        o_pant = 99;
-                        reloc_player ();
-                        return;
                     case 0xFF:
                         sc_terminado = 1;
                         break;

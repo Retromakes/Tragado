@@ -50,6 +50,9 @@ void RedibujaInventario(void) {
 }
 
 void Vacia_Estomago(void) {
+                    // recargo la pantalla para mostrarla sin obstaculo
+                o_pant = 99;
+/*
     if (n_pant == 19) {
         // la pantalla de entrada al estomago
         Vacia (11, 4);
@@ -125,6 +128,7 @@ void Vacia_Estomago(void) {
         Vacia (8, 8);
         Vacia (9, 8);
     }
+    */
 }
 
 void Desactiva_Acido(void) {
@@ -282,6 +286,13 @@ void Activa_Acido(void) {
 }
 
 void Recoge_Objeto(unsigned int n_objeto) {
+    /* debug */
+    /* si esto funciona puedo dibujar los riñones con el mappy en lugar de a mano y borrarlos luego */
+
+    //_x=10; _y=0; _t=0; _n=0; update_tile ();
+
+    /* fin debug */
+
     // el flag 31 es la caché donde guardo primero lo que hay actualmente en la casilla del item
     flags[31] = flags[n_objeto];
 
