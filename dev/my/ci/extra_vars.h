@@ -27,52 +27,52 @@ extern unsigned char tiempo_condon_goteando = 20;
 extern unsigned char *textos_pantallas [0];
 
 #asm
-    .texto0 defm  "    LA NARIZ ESTA TAPONADA      ", 0
-    .texto1 defm  "NO ERA SINUSITIS,ERA UN CARAMELO", 0
+    .texto0 defm  "", 0
+    .texto1 defm  "", 0
     .texto2 defm  "", 0
 
-    .texto3 defm  " UNA BOCA CON UNA CARIES BRUTAL ", 0
-    .texto4 defm  "AHI ABAJO HAY UNA FLEMA ATASCADA", 0
+    .texto3 defm  "", 0
+    .texto4 defm  "", 0
     .texto5 defm  "", 0
 
     .texto6 defm  "", 0
-    .texto7 defm  " ESTE SE HABIA TRAGADO UNA LATA?", 0
+    .texto7 defm  "", 0
     .texto8 defm  "", 0
 
-    .texto9 defm  "   PULMON IZQUIERDO SUPERIOR    ", 0
-    .texto10 defm "CHUPA, CHUPA, QUE YO TE AVISO...", 0
-    .texto11 defm "    PULMON DERECHO SUPERIOR     ", 0
+    .texto9 defm  "", 0
+    .texto10 defm "", 0
+    .texto11 defm "", 0
 
-    .texto12 defm "        PULMON IZQUIERDO        ", 0
-    .texto13 defm "  ESOS PULMONES ESTAN TAPONADOS ", 0
-    .texto14 defm "         PULMON DERECHO         ", 0
+    .texto12 defm "", 0
+    .texto13 defm "", 0
+    .texto14 defm "", 0
 
-    .texto15 defm "   AGUA EN EL PULMON IZQUIERDO  ", 0
-    .texto16 defm "    EL ESOFAGO TERMINA AQUI     ", 0
-    .texto17 defm "   AGUA EN EL PULMON DERECHO    ", 0
+    .texto15 defm "", 0
+    .texto16 defm "", 0
+    .texto17 defm "", 0
 
-    .texto18 defm "  HIGADO IRRITADO POR EL ORUJO  ", 0
-    .texto19 defm " ENTRE EL HIGADO Y EL ESTOMAGO  ", 0
-    .texto20 defm "   EL ESTOMAGO ESTA TAPONADO    ", 0
+    .texto18 defm "", 0
+    .texto19 defm "", 0
+    .texto20 defm "", 0
 
-    .texto21 defm "    ESTE RINON ESTA RESECO      ", 0
-    .texto22 defm "    HAY CACA DURA AHI ABAJO     ", 0
-    .texto23 defm " ESTE RINON TAMBIEN ESTA RESECO ", 0
+    .texto21 defm "", 0
+    .texto22 defm "", 0
+    .texto23 defm "", 0
 
-    .texto24 defm "  FINAL DEL INTESTINO DELGADO   ", 0
-    .texto25 defm "EL INTESTINO APESTA! NO ENTRARE ", 0
-    .texto26 defm "  CURVAS DEL INTESTINO DELGADO  ", 0
+    .texto24 defm "", 0
+    .texto25 defm "", 0
+    .texto26 defm "", 0
 
-    .texto27 defm "  ESE APENDICE ESTA MUY PRIETO  ", 0
-    .texto28 defm "      EL INTESTINO GRUESO       ", 0
-    .texto29 defm "   CURVA DEL INTESTINO GRUESO   ", 0
+    .texto27 defm "", 0
+    .texto28 defm "", 0
+    .texto29 defm "", 0
 
     .texto30 defm "", 0
-    .texto31 defm " EL OHIO/OJALDRE/OGT ESTA CERRAO", 0
+    .texto31 defm "", 0
     .texto32 defm "", 0
 
     .texto33 defm "", 0
-    .texto34 defm "       EL MOJON SIN TWIN!       ", 0
+    .texto34 defm "", 0
 
 
     ._textos_pantallas
