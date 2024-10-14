@@ -286,6 +286,7 @@ void Activa_Acido(void) {
 }
 
 void Recoge_Objeto(unsigned int n_objeto) {
+    wyz_play_sound(5);
     /* debug */
     /* si esto funciona puedo dibujar los riñones con el mappy en lugar de a mano y borrarlos luego */
 

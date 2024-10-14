@@ -13,6 +13,8 @@ if (flags[30] == 31) {
         EscribeTexto("    EL CONDON SE HA VACIADO     ");
         timer_on = 0;     // Detener el temporizador y ponerlo a tope again
         timer_t = tiempo_condon_goteando;
+        // reproduzco sonido
+        wyz_play_sound(13);
     }
 }
 
@@ -23,6 +25,8 @@ switch (n_pant) {
         // si no ha despejado aun el obstaculo y lleva en inventario el objeto 33 (bolsa de polvos)
         if (nariz_despejada == 0 && flags[30] == 33) {
             if (p_tx < 9 && p_ty > 4  && p_ty < 8) {
+                // reproduzco sonido
+                wyz_play_sound(3);
                 // cambio el flag de nariz despejada
                 nariz_despejada = 1;
                 // recargo la pantalla para mostrarla sin obstaculo
@@ -52,6 +56,8 @@ switch (n_pant) {
         // si no ha despejado aun el obstaculo y lleva en inventario el objeto 34 (moco)
         if (diente_arreglado == 0 && flags[30] == 34) {
             if (p_tx > 10 && p_tx < 12  && p_ty < 5) {
+                // reproduzco sonido
+                wyz_play_sound(3);
                 // cambio el flag de diente_arreglado
                 diente_arreglado = 1;
                 // pongo el diente
@@ -72,6 +78,8 @@ switch (n_pant) {
         // si no ha despejado aun el obstaculo y lleva en inventario el objeto 18 (pastilla de menta)
         if (garganta_despejada == 0 && flags[30] == 18) {
             if ((p_tx == 6 && p_ty == 7) || (p_tx == 7 && p_ty == 8)) {
+                // reproduzco sonido
+                wyz_play_sound(3);
                 // cambio el flag de garganta_despejada
                 garganta_despejada = 1;
                 // borro las tiles del obstaculo
@@ -92,6 +100,8 @@ switch (n_pant) {
         // si no ha despejado aun el obstaculo y lleva en inventario el objeto 28 (inhalador)
         if (pulmones_despejados == 0 && flags[30] == 28) {
             if ((p_tx == 3 && p_ty > 2 && p_ty < 7) || (p_tx == 11 && p_ty > 2 && p_ty < 7)) {
+                // reproduzco sonido
+                wyz_play_sound(3);
                 // cambio el flag de pulmones_despejados
                 pulmones_despejados = 1;
                 // recargo la pantalla para mostrarla sin obstaculo
@@ -120,6 +130,8 @@ switch (n_pant) {
         // PULMONES
         // si lleva en inventario el objeto 27 (condon roto) y se pone sobre el agua
         if (flags[30] == 27 && p_ty == 7) {
+            // reproduzco sonido
+                wyz_play_sound(3);
             // muestro texto avisando
             EscribeTexto("HE LLENADO EL CONDON, PERO GOTEA");
             // cambio el objeto del inventario por el condon con agua
@@ -138,6 +150,8 @@ switch (n_pant) {
         // si no ha despejado aun el obstaculo y lleva en inventario el objeto 24 (lata)
         if (higado_calmado == 0 && flags[30] == 24) {
             if (p_tx == 14) {
+                // reproduzco sonido
+                wyz_play_sound(3);
                 // cambio el flag de higado_calmado
                 higado_calmado = 1;
                 // recargo la pantalla para mostrarla sin obstaculo
@@ -172,6 +186,8 @@ switch (n_pant) {
         // si lleva en el inventario el objeto 20 (moneda oxidada)
         if (flags[30] == 20) {
             if (p_tx == 10 && p_ty == 3) {
+                // reproduzco sonido
+                wyz_play_sound(3);
                 // actualizo el texto que se mostrara ahora al entrar
                 EscribeTexto(" EL ACIDO HA LIMPIADO LA MONEDA ");
                 // cambio la moneda oxidada por una limpia
@@ -181,6 +197,8 @@ switch (n_pant) {
             }
         } else if (moneda_introducida == 0 && flags[30] == 22) {
             if (p_tx == 5 && p_ty == 4) {
+                // reproduzco sonido
+                wyz_play_sound(3);
                 // cambio el flag de moneda_introducida
                 moneda_introducida = 1;
                 // borro la tile del obstaculo
@@ -201,6 +219,8 @@ switch (n_pant) {
         // si no ha despejado aun el obstaculo y lleva en inventario el objeto 26 (preservativo xxs)
         if (estomago_despejado == 0 && flags[30] == 26) {
             if (p_tx == 1 && p_ty == 8) {
+                // reproduzco sonido
+                wyz_play_sound(3);
                 // cambio el flag de estomago_despejado
                 estomago_despejado = 1;
                 // actualizo el texto que se mostrara ahora al entrar
@@ -219,6 +239,8 @@ switch (n_pant) {
         // si no ha despejado aun el obstaculo y lleva en inventario el objeto 31 (condon con agua)
         if (rinon1_despejado == 0 && flags[30] == 31) {
             if (p_tx == 7 && p_ty == 5) {
+                // reproduzco sonido
+                wyz_play_sound(3);
                 // cambio el flag de rinon1_despejado
                 rinon1_despejado = 1;
                 // actualizo el texto que se mostrara ahora al entrar
@@ -294,6 +316,8 @@ switch (n_pant) {
         // si no ha despejado aun el obstaculo y lleva en inventario el objeto 31 (condon con agua)
         if (rinon2_despejado == 0 && flags[30] == 31) {
             if (p_tx == 7 && p_ty == 5) {
+                // reproduzco sonido
+                wyz_play_sound(3);
                 // cambio el flag de rinon2_despejado
                 rinon2_despejado = 1;
                 // actualizo el texto que se mostrara ahora al entrar
@@ -368,6 +392,8 @@ switch (n_pant) {
         // si no ha despejado aun el obstaculo y lleva en inventario el objeto 21 (mascara FFP2)
         if (intestino_despejado == 0 && flags[30] == 21) {
             if (p_tx == 6) {
+                // reproduzco sonido
+                wyz_play_sound(3);
                 // cambio el flag de intestino_despejado
                 intestino_despejado = 1;
                 // borro las tiles del obstaculo
@@ -388,6 +414,8 @@ switch (n_pant) {
         // si no ha despejado aun el obstaculo y lleva en inventario el objeto 36 (forceps)
         if (apendice_dilatado == 0 && flags[30] == 36) {
             if (p_tx == 5 && p_ty == 5) {
+                // reproduzco sonido
+                wyz_play_sound(3);
                 // aviso que el apendice esta dilatado
                 apendice_dilatado = 1;
                 // muestro texto avisando

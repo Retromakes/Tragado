@@ -67,3 +67,6 @@ textos_pantallas[28] = "      EL INTESTINO GRUESO       ";
 textos_pantallas[29] = "   CURVA DEL INTESTINO GRUESO   ";
 textos_pantallas[31] = " EL OHIO/OJALDRE/OGT ESTA CERRAO";
 textos_pantallas[34] = "       EL MOJON SIN TWIN!       ";
+
+// reproduzco sonido
+wyz_play_sound(0);
