@@ -3,7 +3,7 @@
 
 if [%1]==[help] goto :help
 
-set game=tragado
+set game=bocaogt
 set cpc_gfx_mode=0
 
 if [%1]==[justcompile] goto :compile
