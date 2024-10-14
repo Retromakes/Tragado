@@ -1,6 +1,11 @@
 // MTE MK1 (la Churrera) v5.0
 // Copyleft 2010-2014, 2020 by the Mojon Twins
 /*
+
+https://zx.remysharp.com/audio/#src=MjA4LDMy
+
+ojo que la URL es para espectrum, y en amstrad todo es mas grave
+
 Copiar el segundo y tercer digitos de Per en el primer valor de DB
 el primer digito de Per en el primer digito del segundo valor seguido del volumen (V)
 el tercer valor es directamente el del ruido
