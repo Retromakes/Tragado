@@ -2,10 +2,12 @@
   "ExpandedNodes": [
     "",
     "\\dev",
+    "\\dev\\loader",
     "\\dev\\my",
     "\\dev\\my\\ci",
+    "\\dev\\my\\wyz",
+    "\\gfx",
     "\\script"
   ],
-  "SelectedNode": "\\dev\\my\\ci\\entering_screen.h",
   "PreviewInSolutionExplorer": false
 }

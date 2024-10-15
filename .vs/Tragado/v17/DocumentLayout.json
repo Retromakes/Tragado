@@ -1,38 +1,34 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\Util\\cpc\\MK1_Pestecera-5.10\\github\\Tragado\\",
+  "WorkspaceRootPath": "C:\\cpc\\github\\Tragado\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Util\\cpc\\MK1_Pestecera-5.10\\github\\Tragado\\dev\\my\\ci\\entering_screen.h||{3B902123-F8A7-4915-9F01-361F908088D0}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:dev\\my\\ci\\entering_screen.h||{3B902123-F8A7-4915-9F01-361F908088D0}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\cpc\\github\\Tragado\\.gitignore||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:.gitignore||{3B902123-F8A7-4915-9F01-361F908088D0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Util\\cpc\\MK1_Pestecera-5.10\\github\\Tragado\\dev\\my\\ci\\frases.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:dev\\my\\ci\\frases.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Util\\cpc\\MK1_Pestecera-5.10\\github\\Tragado\\dev\\my\\ci\\extra_vars.h||{3B902123-F8A7-4915-9F01-361F908088D0}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:dev\\my\\ci\\extra_vars.h||{3B902123-F8A7-4915-9F01-361F908088D0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Util\\cpc\\MK1_Pestecera-5.10\\github\\Tragado\\script\\tragado.spt||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:script\\tragado.spt||{8B382828-6202-11D1-8870-0000F87579D2}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Util\\cpc\\MK1_Pestecera-5.10\\github\\Tragado\\dev\\my\\ci\\entering_game.h||{3B902123-F8A7-4915-9F01-361F908088D0}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:dev\\my\\ci\\entering_game.h||{3B902123-F8A7-4915-9F01-361F908088D0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Util\\cpc\\MK1_Pestecera-5.10\\github\\Tragado\\dev\\compile.bat||{3B902123-F8A7-4915-9F01-361F908088D0}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:dev\\compile.bat||{3B902123-F8A7-4915-9F01-361F908088D0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Util\\cpc\\MK1_Pestecera-5.10\\github\\Tragado\\dev\\my\\config.h||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\cpc\\github\\Tragado\\dev\\my\\config.h||{3B902123-F8A7-4915-9F01-361F908088D0}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:dev\\my\\config.h||{3B902123-F8A7-4915-9F01-361F908088D0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Util\\cpc\\MK1_Pestecera-5.10\\github\\Tragado\\todo.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:todo.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\cpc\\github\\Tragado\\dev\\my\\ci\\extra_functions.h||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:dev\\my\\ci\\extra_functions.h||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\cpc\\github\\Tragado\\dev\\my\\ci\\extra_routines.h||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:dev\\my\\ci\\extra_routines.h||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\cpc\\github\\Tragado\\dev\\my\\ci\\extra_vars.h||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:dev\\my\\ci\\extra_vars.h||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\cpc\\github\\Tragado\\dev\\my\\ci\\entering_game.h||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:dev\\my\\ci\\entering_game.h||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\cpc\\github\\Tragado\\dev\\my\\ci\\entering_screen.h||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:dev\\my\\ci\\entering_screen.h||{3B902123-F8A7-4915-9F01-361F908088D0}"
     }
   ],
   "DocumentGroupContainers": [
@@ -41,8 +37,8 @@
       "VerticalTabListWidth": 256,
       "DocumentGroups": [
         {
-          "DockedWidth": 153,
-          "SelectedChildIndex": 8,
+          "DockedWidth": 200,
+          "SelectedChildIndex": 9,
           "Children": [
             {
               "$type": "Bookmark",
@@ -54,7 +50,15 @@
             },
             {
               "$type": "Bookmark",
-              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+              "Name": "ST:129:0:{13b12e3e-c1b4-4539-9371-4fe9a0d523fc}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:133:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
             },
             {
               "$type": "Bookmark",
@@ -66,107 +70,96 @@
             },
             {
               "$type": "Bookmark",
+              "Name": "ST:130:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
               "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "frases.txt",
-              "DocumentMoniker": "D:\\Util\\cpc\\MK1_Pestecera-5.10\\github\\Tragado\\dev\\my\\ci\\frases.txt",
-              "RelativeDocumentMoniker": "dev\\my\\ci\\frases.txt",
-              "ToolTip": "D:\\Util\\cpc\\MK1_Pestecera-5.10\\github\\Tragado\\dev\\my\\ci\\frases.txt",
-              "RelativeToolTip": "dev\\my\\ci\\frases.txt",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAACUAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
-              "WhenOpened": "2024-07-15T13:45:21.761Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "extra_vars.h",
-              "DocumentMoniker": "D:\\Util\\cpc\\MK1_Pestecera-5.10\\github\\Tragado\\dev\\my\\ci\\extra_vars.h",
-              "RelativeDocumentMoniker": "dev\\my\\ci\\extra_vars.h",
-              "ToolTip": "D:\\Util\\cpc\\MK1_Pestecera-5.10\\github\\Tragado\\dev\\my\\ci\\extra_vars.h",
-              "RelativeToolTip": "dev\\my\\ci\\extra_vars.h",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAeAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-07-11T16:36:56.776Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "entering_screen.h",
-              "DocumentMoniker": "D:\\Util\\cpc\\MK1_Pestecera-5.10\\github\\Tragado\\dev\\my\\ci\\entering_screen.h",
-              "RelativeDocumentMoniker": "dev\\my\\ci\\entering_screen.h",
-              "ToolTip": "D:\\Util\\cpc\\MK1_Pestecera-5.10\\github\\Tragado\\dev\\my\\ci\\entering_screen.h",
-              "RelativeToolTip": "dev\\my\\ci\\entering_screen.h",
-              "ViewState": "AQIAAB4AAAAAAAAAAAAgwEkAAAAYAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-07-11T16:39:59.619Z",
+              "Title": ".gitignore",
+              "DocumentMoniker": "C:\\cpc\\github\\Tragado\\.gitignore",
+              "RelativeDocumentMoniker": ".gitignore",
+              "ToolTip": "C:\\cpc\\github\\Tragado\\.gitignore",
+              "RelativeToolTip": ".gitignore",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAEAAAAEAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2024-10-15T05:58:42.401Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "entering_game.h",
-              "DocumentMoniker": "D:\\Util\\cpc\\MK1_Pestecera-5.10\\github\\Tragado\\dev\\my\\ci\\entering_game.h",
-              "RelativeDocumentMoniker": "dev\\my\\ci\\entering_game.h",
-              "ToolTip": "D:\\Util\\cpc\\MK1_Pestecera-5.10\\github\\Tragado\\dev\\my\\ci\\entering_game.h",
-              "RelativeToolTip": "dev\\my\\ci\\entering_game.h",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAAAAAAA",
+              "DocumentIndex": 1,
+              "Title": "config.h",
+              "DocumentMoniker": "C:\\cpc\\github\\Tragado\\dev\\my\\config.h",
+              "RelativeDocumentMoniker": "dev\\my\\config.h",
+              "ToolTip": "C:\\cpc\\github\\Tragado\\dev\\my\\config.h",
+              "RelativeToolTip": "dev\\my\\config.h",
+              "ViewState": "AQIAACkAAAAAAAAAAAAAwDIAAAAaAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-07-11T16:23:42.708Z"
+              "WhenOpened": "2024-09-03T09:25:56.553Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
-              "Title": "compile.bat",
-              "DocumentMoniker": "D:\\Util\\cpc\\MK1_Pestecera-5.10\\github\\Tragado\\dev\\compile.bat",
-              "RelativeDocumentMoniker": "dev\\compile.bat",
-              "ToolTip": "D:\\Util\\cpc\\MK1_Pestecera-5.10\\github\\Tragado\\dev\\compile.bat",
-              "RelativeToolTip": "dev\\compile.bat",
-              "ViewState": "AQIAAA8AAAAAAAAAAAAAACEAAABmAAAA",
-              "Icon": "00000000-0000-0000-0000-000000000000.000000|iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAScSURBVEhLnVZtaFtVGH5y8524xnVJa9u5tXSi1m6wSScdQmEbmz9Ef9gKgv6QOhRlq/5QEEQQakWUIcgQSwVd/aEO\u002BoG0\u002B\u002BHHj7FO6NqtdbVN1samTZqPJs3XvblJbnLv9dxzk1vTZVR84Ml973vOeZ9z3vece6IDQX9/P\u002BtwODwcxx222WxuhmGyxH6C2OsGgyHFsmybxWIJm0ymKPG3Wa3WTUmSP\u002Bzru3BFGb8TXx/tmLjoXXnfk4rPU4GRkZFsR0eHWRAEFIsiZFmG0WiAKKo2EdFsvd4ASRLlycmriG/FhycmJz6Yn58LFItFGrz/1Tffs/i8nyR8f69/vLrcYqBeAjJbPNTQAI5laTCyImQyGSJYRE1NDXK5HJQJKHY2m9OZTEZ0d7/wUlNT08GbMzMvDw0NbnSdfKbFcbzzfNC5T2b1liGsLoMKyIRcQUYoEFFeKcLcZslS7Ch9MgYG0Xyc2qIkIxgKGnte7O5i9MxSjcNxLOS72Z3c8taxorRyde3uz0q/coryJ8\u002BcNRZIev4TdDpMXb8OnufpqyRLMAsbrM7/ZYEXTHvvhPYNDo8u9oUjcYEKjI2NSafPnEVRkuiA3aFTNCqQdH\u002BHzMx5KcJKut/\u002BNB7pv5z/S/FrAk8\u002B3YVMPq\u002B80nxHVjywOR5EbePDpLAM9d8PslSAcO05WLjbciCNS6fexYVSk1oDBbUPWGE26qn9xVeXENuMUKG33n4HLa2t1H8/sMvDENnbpI4Ijt/A5yU3hTY1WRZhMRop3e4l9Pb2orm5GQUiUvZXIyPEsHnrMzjMQFrAj4MTCJRCUmgC6XwCyew6pSjmSl4yu3wEa6E7mJi8Qtu8a3P45ddxtS/vQ8hzGU79BoKZPfjoB9dSTkBFIbUUZfIcTPYpastMkj4V5PgYvv92HIsLazCa07gxNQ2fN4T6htfReNAPMfQTLPoCkoanwCNFRqhbugxtBYpAAX5KGWqxKWxuHDnBkGDA/sfDaD\u002Buw/5WHfY0esCF/4Cd9SCcBura3yBTN5UGbUMT4AQOfHGBUpS5khco6hdw6HAGZ54/BJvTjceOFXDq2QPQWWeRW/wdMjk7KddROJo6SW/lyFaiQoArCJQi\u002BeaUwRcLEM08GtrDtA12Dq5HN8F612BJxJA1mBCq7yr1vhcVKRJIeRQq4WWGR\u002Bcri2h8xKr5NWYFCHNu1NrI5nDWIyrb1SBVULGCKC9QnrvYDL/zU3AGDknysSv7y0ysbqCOySImGhB11SGZJ0UguDdBFQIswhlhV0bTOeiDGTCiDj69AyGbHXE\u002Bqa66ikJFiqoF3MlEmoHTdhoppgOrrgMI5iQksmRbV5s\u002BwfYKiEA8V9yVgRSPKX8Q0y4H7trN1Jfg1U94NWyvgNQgxRd2ZZxcOtNmP2b0cc2XzG0fzJ2oEAjG87syQnZQ1CZiPZXVfHE\u002BQWPIVfJUkSKPL/a/uJVRBarVQbsPatrsCCT91FkGuVagXizkRxlMXtQZKX71xlGbdejYewI9PT3nbs3OfkMbSqDtAwMD5MQXST9luDoN1VY7kL8xqr3zGvsXlD8Ho6Ojr81WCAD/ACFpBQ44DjmHAAAAAElFTkSuQmCC",
-              "WhenOpened": "2024-07-09T22:18:52.567Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "tragado.spt",
-              "DocumentMoniker": "D:\\Util\\cpc\\MK1_Pestecera-5.10\\github\\Tragado\\script\\tragado.spt",
-              "RelativeDocumentMoniker": "script\\tragado.spt",
-              "ToolTip": "D:\\Util\\cpc\\MK1_Pestecera-5.10\\github\\Tragado\\script\\tragado.spt",
-              "RelativeToolTip": "script\\tragado.spt",
-              "ViewState": "AQIAACEAAAAAAAAAAAAAAEQAAAAiAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2024-07-09T21:39:53.148Z",
-              "EditorCaption": ""
+              "Title": "entering_game.h",
+              "DocumentMoniker": "C:\\cpc\\github\\Tragado\\dev\\my\\ci\\entering_game.h",
+              "RelativeDocumentMoniker": "dev\\my\\ci\\entering_game.h",
+              "ToolTip": "C:\\cpc\\github\\Tragado\\dev\\my\\ci\\entering_game.h",
+              "RelativeToolTip": "dev\\my\\ci\\entering_game.h",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAC4AAAASAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-09-04T08:55:02.917Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 6,
-              "Title": "config.h",
-              "DocumentMoniker": "D:\\Util\\cpc\\MK1_Pestecera-5.10\\github\\Tragado\\dev\\my\\config.h",
-              "RelativeDocumentMoniker": "dev\\my\\config.h",
-              "ToolTip": "D:\\Util\\cpc\\MK1_Pestecera-5.10\\github\\Tragado\\dev\\my\\config.h",
-              "RelativeToolTip": "dev\\my\\config.h",
-              "ViewState": "AQIAAJsAAAAAAAAAAAAowKcAAAAMAAAA",
+              "Title": "entering_screen.h",
+              "DocumentMoniker": "C:\\cpc\\github\\Tragado\\dev\\my\\ci\\entering_screen.h",
+              "RelativeDocumentMoniker": "dev\\my\\ci\\entering_screen.h",
+              "ToolTip": "C:\\cpc\\github\\Tragado\\dev\\my\\ci\\entering_screen.h",
+              "RelativeToolTip": "dev\\my\\ci\\entering_screen.h",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAPsAAAAlAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-07-09T21:31:07.026Z"
+              "WhenOpened": "2024-09-04T08:31:51.227Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "todo.md",
-              "DocumentMoniker": "D:\\Util\\cpc\\MK1_Pestecera-5.10\\github\\Tragado\\todo.md",
-              "RelativeDocumentMoniker": "todo.md",
-              "ToolTip": "D:\\Util\\cpc\\MK1_Pestecera-5.10\\github\\Tragado\\todo.md",
-              "RelativeToolTip": "todo.md",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAD4AAABdAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
-              "WhenOpened": "2024-07-09T21:25:59.619Z"
+              "DocumentIndex": 2,
+              "Title": "extra_functions.h",
+              "DocumentMoniker": "C:\\cpc\\github\\Tragado\\dev\\my\\ci\\extra_functions.h",
+              "RelativeDocumentMoniker": "dev\\my\\ci\\extra_functions.h",
+              "ToolTip": "C:\\cpc\\github\\Tragado\\dev\\my\\ci\\extra_functions.h",
+              "RelativeToolTip": "dev\\my\\ci\\extra_functions.h",
+              "ViewState": "AQIAAAoAAAAAAAAAAAAAAB4AAAAnAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-09-04T08:31:44.886Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "extra_routines.h",
+              "DocumentMoniker": "C:\\cpc\\github\\Tragado\\dev\\my\\ci\\extra_routines.h",
+              "RelativeDocumentMoniker": "dev\\my\\ci\\extra_routines.h",
+              "ToolTip": "C:\\cpc\\github\\Tragado\\dev\\my\\ci\\extra_routines.h",
+              "RelativeToolTip": "dev\\my\\ci\\extra_routines.h",
+              "ViewState": "AQIAAF8BAAAAAAAAAAAAAHgBAAAjAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-09-04T08:31:47.593Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "extra_vars.h",
+              "DocumentMoniker": "C:\\cpc\\github\\Tragado\\dev\\my\\ci\\extra_vars.h",
+              "RelativeDocumentMoniker": "dev\\my\\ci\\extra_vars.h",
+              "ToolTip": "C:\\cpc\\github\\Tragado\\dev\\my\\ci\\extra_vars.h",
+              "RelativeToolTip": "dev\\my\\ci\\extra_vars.h",
+              "ViewState": "AQIAAAgAAAAAAAAAAAAAABYAAAArAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-09-05T09:34:20.428Z"
             }
           ]
         }
