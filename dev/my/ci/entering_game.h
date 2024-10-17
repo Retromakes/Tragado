@@ -67,6 +67,35 @@ textos_pantallas[28] = "      EL INTESTINO GRUESO       ";
 textos_pantallas[29] = "   CURVA DEL INTESTINO GRUESO   ";
 textos_pantallas[31] = " EL OHIO/OJALDRE/OGT ESTA CERRAO";
 textos_pantallas[34] = "       EL MOJON SIN TWIN!       ";
-
+/*
+textos_pantallas[0] = "      THAT NOSE IS CLOGGED       ";
+textos_pantallas[1] = "IT WASNT SINUSITIS, ITS A CANDY! ";
+textos_pantallas[3] = "   A MOUTH WITH A NASTY CAVITY   ";
+textos_pantallas[4] = "  THERE IS A PHLEGM STUCK BELOW  ";
+textos_pantallas[7] = "      DID HE SWALLOW A CAN?      ";
+textos_pantallas[9] = "     LEFT LUNG, UPPER SECTION    ";
+textos_pantallas[10] = "      SUCKY SUCKY THROATH       ";
+textos_pantallas[11] = "   RIGHT LUNG, UPPER SECTION    ";
+textos_pantallas[12] = "          LEFT LUNG             ";
+textos_pantallas[13] = "    THESE LUNGS ARE BLOCKED     ";
+textos_pantallas[14] = "          RIGHT LUNG            ";
+textos_pantallas[15] = "     WATER IN THE LEFT LUNG     ";
+textos_pantallas[16] = "     ESOPHAGUS ENDS HERE        ";
+textos_pantallas[17] = "     WATER IN THE RIGHT LUNG    ";
+textos_pantallas[18] = "   LIVER IRRITATED FROM LIQUOR  ";
+textos_pantallas[19] = "   BETWEEN LIVER AND STOMACH    ";
+textos_pantallas[20] = "     THE STOMACH IS CLOGGED     ";
+textos_pantallas[21] = "       THIS KIDNEY IS DRY       ";
+textos_pantallas[22] = "   THERE IS STALE POOP BELOW    ";
+textos_pantallas[23] = "    THIS KIDNEY IS ALSO DRY     ";
+textos_pantallas[24] = "     END OF SMALL INTESTINE     ";
+textos_pantallas[25] = " THE GUTS STINKS! I WONT ENTER  ";
+textos_pantallas[26] = "  BENDS OF THE SMALL INTESTINE  ";
+textos_pantallas[27] = "  THAT APPENDIX IS REALLY TIGHT ";
+textos_pantallas[28] = "      THE LARGE INTESTINE       ";
+textos_pantallas[29] = "  BEND OF THE LARGE INTESTINE   ";
+textos_pantallas[31] = "  THE BACKDOOR IS LOCKED TIGHT  ";
+textos_pantallas[34] = "          THE END LOG!          ";
+*/
 // reproduzco sonido
 wyz_play_sound(0);
