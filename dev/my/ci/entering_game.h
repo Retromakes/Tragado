@@ -38,7 +38,7 @@ intestino_despejado = 0;
 apendice_dilatado = 0;
 
 tiempo_condon_goteando = 20;
-
+/*
 textos_pantallas[0] = "    LA NARIZ ESTA TAPONADA      ";
 textos_pantallas[1] = "NO ERA SINUSITIS,ERA UN CARAMELO";
 textos_pantallas[3] = " UNA BOCA CON UNA CARIES BRUTAL ";
@@ -67,7 +67,8 @@ textos_pantallas[28] = "      EL INTESTINO GRUESO       ";
 textos_pantallas[29] = "   CURVA DEL INTESTINO GRUESO   ";
 textos_pantallas[31] = " EL OHIO/OJALDRE/OGT ESTA CERRAO";
 textos_pantallas[34] = "       EL MOJON SIN TWIN!       ";
-/*
+*/
+
 textos_pantallas[0] = "      THAT NOSE IS CLOGGED       ";
 textos_pantallas[1] = "IT WASNT SINUSITIS, ITS A CANDY! ";
 textos_pantallas[3] = "   A MOUTH WITH A NASTY CAVITY   ";
@@ -96,6 +97,6 @@ textos_pantallas[28] = "      THE LARGE INTESTINE       ";
 textos_pantallas[29] = "  BEND OF THE LARGE INTESTINE   ";
 textos_pantallas[31] = "  THE BACKDOOR IS LOCKED TIGHT  ";
 textos_pantallas[34] = "          THE END LOG!          ";
-*/
+
 // reproduzco sonido
 wyz_play_sound(0);
