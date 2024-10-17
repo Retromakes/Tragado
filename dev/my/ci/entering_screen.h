@@ -121,7 +121,7 @@ switch (n_pant) {
                     // muestro el objeto en el inventario
                     RedibujaInventario();
                     // recargo el texto de la pantalla
-                    EscribeTexto("EL ACIDO HA AGUJEREADO EL CONDON");
+                    EscribeTexto(" ACID HAS PUNCTURED THE CONDOM  ");
                 }
                 /*
                 // borro las tiles del obstaculo

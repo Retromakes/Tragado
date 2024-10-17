@@ -328,41 +328,41 @@ void Recoge_Objeto(unsigned int n_objeto) {
     // escribo frase con el objeto que ha recogido
     switch (flags[30]) {
         case 18:
-            EscribeTexto("   TENGO: PASTILLA MENTOLADA    ");
+            EscribeTexto("    GOT: EUCALYPTUS CANDY       ");
             break;
         case 20:
-            EscribeTexto("      TENGO: MONEDA OXIDADA     ");
+            EscribeTexto("        GOT: RUSTY COIN         ");
             break;
         case 21:
-            EscribeTexto("       TENGO: MASCARA FFP2      ");
+            EscribeTexto("         GOT: FFP2 MASK         ");
             break;
         case 22:
-            EscribeTexto("    TENGO: MONEDA BRILLANTE     ");
+            EscribeTexto("        GOT: SHINY COIN         ");
             break;
         case 24:
-            EscribeTexto("   TENGO: BEBIDA SIN ALCOHOL    ");
+            EscribeTexto("   GOT: NON ALCOHOLIC DRINK     ");
             break;
         case 26:
             lleva_preservativo = 1;
-            EscribeTexto("QUEPO DENTRO DE ESTE CONDON XXS!");
+            EscribeTexto("I CAN FIT INSIDE THIS XXS CONDOM");
             break;
         case 27:
-            EscribeTexto(" TENGO: CONDON XXS AGUJEREADO   ");
+            EscribeTexto("    GOT: PUNCTURED XXS CONDOM   ");
             break;
         case 28:
-            EscribeTexto("        TENGO: INHALADOR        ");
+            EscribeTexto("          GOT: INHALER          ");
             break;
         case 31:
-            EscribeTexto("TENGO: PRESERVATIVO LLENO (AGUA)");
+            EscribeTexto("GOT: FULL CONDOM (FULL OF WATER)");
             break;
         case 33:
-            EscribeTexto("TENGO: BOLSA CON POLVOS MAGICOS ");
+            EscribeTexto("  GOT: BAG WITH MAGIC POWDER    ");
             break;
         case 34:
-            EscribeTexto("       TENGO: MOCO ESPESO       ");
+            EscribeTexto("        GOT: THICK MUCUS        ");
             break;
         case 36:
-            EscribeTexto("  TENGO: FORCEPS DE DILATACION  ");
+            EscribeTexto("    GOT: DILATATION FORCEPS     ");
             break;
     }
 }

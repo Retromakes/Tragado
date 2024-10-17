@@ -10,7 +10,7 @@ if (flags[30] == 31) {
         // muestro el objeto en el inventario
         RedibujaInventario();
         // muestro texto avisando
-        EscribeTexto("    EL CONDON SE HA VACIADO     ");
+        EscribeTexto("  OOPS... CONDOM HAS EMPTIED    ");
         timer_on = 0;     // Detener el temporizador y ponerlo a tope again
         timer_t = tiempo_condon_goteando;
         // reproduzco sonido
@@ -41,7 +41,7 @@ switch (n_pant) {
                 Vacia (5, 5);
                 */
                 // actualizo el texto que se mostrara ahora al entrar
-                textos_pantallas[0] = " LA NARIZ AHORA ESTA DESPEJADA  ";
+                textos_pantallas[0] = " SNIFFF! NOSE IS NOW CLEAR      ";
                 // suelto el objeto
                 flags[30] = 0;
                 // muestro el objeto en el inventario
@@ -63,7 +63,7 @@ switch (n_pant) {
                 // pongo el diente
                 Coloca_Obstaculo (3, 11, 3);
                 // actualizo el texto que se mostrara ahora al entrar
-                textos_pantallas[3] = " RATONCITO ME DIO MONEDA OXIDADA";
+                textos_pantallas[3] = "A WEIRD MOUSE GAVE ME RUSTY COIN";
                 // suelto el objeto
                 flags[30] = 20;
                 // muestro el objeto en el inventario
@@ -85,7 +85,7 @@ switch (n_pant) {
                 // borro las tiles del obstaculo
                 Vacia (6, 8);
                 // actualizo el texto que se mostrara ahora al entrar
-                textos_pantallas[4] = "   MMMH... UNA GARGANTA LIMPIA  ";
+                textos_pantallas[4] = "     MMMH... A CLEAN THROAT     ";
                 // suelto el objeto
                 flags[30] = 0;
                 // muestro el objeto en el inventario
@@ -115,7 +115,7 @@ switch (n_pant) {
                 Vacia (12, 5);
                 */
                 // actualizo el texto que se mostrara ahora al entrar
-                textos_pantallas[13]  = "  AHHH... PULMONES DESPEJADOS!  ";
+                textos_pantallas[13]  = "     AHHH... LUNGS ARE OPEN!    ";
                 // suelto el objeto
                 flags[30] = 0;
                 // muestro el objeto en el inventario
@@ -133,7 +133,7 @@ switch (n_pant) {
             // reproduzco sonido
                 wyz_play_sound(3);
             // muestro texto avisando
-            EscribeTexto("HE LLENADO EL CONDON, PERO GOTEA");
+            EscribeTexto("I FILLED THE CONDOM BUT IT DRIPS");
             // cambio el objeto del inventario por el condon con agua
             flags[30] = 31;
             // muestro el objeto en el inventario
@@ -171,7 +171,7 @@ switch (n_pant) {
                 Vacia (13, 5);
                 */
                 // actualizo el texto que se mostrara ahora al entrar
-                textos_pantallas[18] = "EL REFRESCO HA CALMADO EL HIGADO";
+                textos_pantallas[18] = "SOFT DRINK HAS CALMED THE LIVER ";
                 // suelto el objeto
                 flags[30] = 0;
                 // muestro el objeto en el inventario
@@ -189,7 +189,7 @@ switch (n_pant) {
                 // reproduzco sonido
                 wyz_play_sound(3);
                 // actualizo el texto que se mostrara ahora al entrar
-                EscribeTexto(" EL ACIDO HA LIMPIADO LA MONEDA ");
+                EscribeTexto(" THAT ACID HAS CLEANED THE COIN ");
                 // cambio la moneda oxidada por una limpia
                 flags[30] = 22;
                 // muestro el objeto en el inventario
@@ -204,7 +204,7 @@ switch (n_pant) {
                 // borro la tile del obstaculo
                 Vacia (4, 4);
                 // actualizo el texto que se mostrara ahora al entrar
-                textos_pantallas[19] = " ENTRE EL HIGADO Y EL ESTOMAGO  ";
+                textos_pantallas[19] = "   BETWEEN LIVER AND STOMACH    ";
                 // suelto el objeto
                 flags[30] = 0;
                 // muestro el objeto en el inventario
@@ -224,7 +224,7 @@ switch (n_pant) {
                 // cambio el flag de estomago_despejado
                 estomago_despejado = 1;
                 // actualizo el texto que se mostrara ahora al entrar
-                textos_pantallas[20] = "   EL ESTOMAGO YA ESTA LIMPIO   ";
+                textos_pantallas[20] = "    THE STOMACH IS NOW CLEAN    ";
                 // cambio el preservativo a roto
                 lleva_preservativo = 0;   
                 // suelto el objeto y cojo el preservativo roto
@@ -244,7 +244,7 @@ switch (n_pant) {
                 // cambio el flag de rinon1_despejado
                 rinon1_despejado = 1;
                 // actualizo el texto que se mostrara ahora al entrar
-                textos_pantallas[21] = "    HE HUMEDECIDO ESTE RINON    ";
+                textos_pantallas[21] = "  I HAVE MOISTENED THIS KIDNEY  ";
                 // vacio el condon
                 flags[30] = 27;
                 /*
@@ -256,7 +256,7 @@ switch (n_pant) {
                 // si el otro riñon esta despejado tambien
                 if (rinon2_despejado == 1) {
                     // actualizo el texto que se mostrara ahora al entrar en el intestino
-                    textos_pantallas[22] = "TANTO AGUA HA EVACUADO FINO FINO";
+                    textos_pantallas[22] = " SO MUCH WATER IT EVACUATED ALL ";
                 }
                 // recargo la pantalla para mostrar el riñon sin obstaculo
                 o_pant = 99;
@@ -321,7 +321,7 @@ switch (n_pant) {
                 // cambio el flag de rinon2_despejado
                 rinon2_despejado = 1;
                 // actualizo el texto que se mostrara ahora al entrar
-                textos_pantallas[23] = "    HE HUMEDECIDO ESTE RINON    ";
+                textos_pantallas[23] = "  I HAVE MOISTENED THIS KIDNEY  ";
                 // vacio el condon
                 flags[30] = 27;
                 /*
@@ -333,7 +333,7 @@ switch (n_pant) {
                 // si el otro riñon esta despejado tambien
                 if (rinon1_despejado == 1) {
                     // actualizo el texto que se mostrara ahora al entrar en el intestino
-                    textos_pantallas[22] = "TANTO AGUA HA EVACUADO FINO FINO";
+                    textos_pantallas[22] = " SO MUCH WATER IT EVACUATED ALL ";
                 }
                 // recargo la pantalla para mostrar el riñon sin obstaculo
                 o_pant = 99;
@@ -399,7 +399,7 @@ switch (n_pant) {
                 // borro las tiles del obstaculo
                 Vacia (7, 1);
                 // actualizo el texto que se mostrara ahora al entrar
-                textos_pantallas[25] = " PUESTA MASCARILLA FFP2 NO HUELE";
+                textos_pantallas[25] = "WEARING FFP2 MASK DOES NOT SMELL";
                 // suelto el objeto
                 flags[30] = 0;
                 // muestro el objeto en el inventario
@@ -419,8 +419,8 @@ switch (n_pant) {
                 // aviso que el apendice esta dilatado
                 apendice_dilatado = 1;
                 // muestro texto avisando
-                textos_pantallas[27] = " ESO LE TIENE QUE ESTAR DOLIENDO";
-                textos_pantallas[31] = " SE LE HA DILATADO EL O.G.T. !! ";
+                textos_pantallas[27] = "   THAT MUST BE HURTING A LOT   ";
+                textos_pantallas[31] = "  HIS EXIT HOLE HAS DILATED !!  ";
                 // suelto el objeto
                 flags[30] = 0;
                 // muestro el objeto en el inventario
